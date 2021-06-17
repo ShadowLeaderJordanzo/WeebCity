@@ -133,7 +133,7 @@
 	layer = BACKGROUND_LAYER+21
 	color = "#000"
 	show_when_dead = TRUE
-
+ 
 //Provides whiteness in case you don't see lights so everything is still visible
 /obj/screen/fullscreen/lighting_backdrop/unlit
 	layer = BACKGROUND_LAYER+20

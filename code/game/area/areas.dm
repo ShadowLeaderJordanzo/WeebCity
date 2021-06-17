@@ -40,6 +40,7 @@
 	var/no_teleportlocs = FALSE
 
 	var/outdoors = FALSE //For space, the asteroid, lavaland, etc. Used with blueprints to determine if we are adding a new area (vs editing a station room)
+	var/planet_outdoors = FALSE
 	var/xenobiology_compatible = FALSE //Can the Xenobio management console transverse this area by default?
 	var/nad_allowed = FALSE //is the station NAD allowed on this area?
 

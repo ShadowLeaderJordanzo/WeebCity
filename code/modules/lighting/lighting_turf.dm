@@ -58,19 +58,27 @@
 
 // Used to get a scaled lumcount.
 /turf/proc/get_lumcount(minlum = 0, maxlum = 1)
-	if(!lighting_object)
+	if(!lighting_object && !sunlight_object) // WEEBCITY - JTGSZ CHANGE - Sunlighting
 		return 1
 
 	var/totallums = 0
 	var/thing
 	var/datum/lighting_corner/L
+	var/totalSunFalloff // WEEBCITY - JTGSZ CHANGE - Sunlighting
 	for (thing in corners)
 		if(!thing)
 			continue
 		L = thing
 		totallums += L.lum_r + L.lum_b + L.lum_g
+		totalSunFalloff += L.sunFalloff // WEEBCITY - JTGSZ CHANGE - Sunlighting
 
 	totallums /= 12 // 4 corners, each with 3 channels, get the average.
+
+	/* if we are outside, full sunlight */ // WEEBCITY - JTGSZ CHANGE - Sunlighting
+	if(sunlight_object && sunlight_object.state) /* SUNLIGHT_INDOOR is 0 */ // WEEBCITY - JTGSZ CHANGE - Sunlighting
+		totalSunFalloff = 4 // WEEBCITY - JTGSZ CHANGE - Sunlighting
+	/* sunlight / 4 corners */
+	totallums += totalSunFalloff / 4
 
 	totallums = (totallums - minlum) / (maxlum - minlum)
 
