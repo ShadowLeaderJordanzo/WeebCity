@@ -206,6 +206,7 @@
 	var/old_dynamic_lighting = dynamic_lighting
 	var/old_affecting_lights = affecting_lights
 	var/old_lighting_object = lighting_object
+	var/old_sunlight_object = sunlight_object // WEEBCITY - JTGSZ CHANGE - Sunlighting
 	var/old_blueprint_data = blueprint_data
 	var/old_obscured = obscured
 	var/old_corners = corners
@@ -240,6 +241,9 @@
 
 		for(var/turf/space/S in RANGE_TURFS(1, src)) //RANGE_TURFS is in code\__HELPERS\game.dm
 			S.update_starlight()
+	
+	if(SSsunlight.initialized)
+		sunlight_object = old_sunlight_object
 
 	obscured = old_obscured
 

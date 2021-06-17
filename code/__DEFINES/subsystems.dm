@@ -84,10 +84,12 @@
 #define INIT_ORDER_LATE_MAPPING -40
 #define INIT_ORDER_PATH -50
 #define INIT_ORDER_PERSISTENCE -95
+#define INIT_ORDER_SUNLIGHT -100 //WEEBCITY - JTGSZ CHANGE - Daynight lighting subsystem
 
 // Subsystem fire priority, from lowest to highest priority
 // If the subsystem isn't listed here it's either DEFAULT or PROCESS (if it's a processing subsystem child)
 
+#define FIRE_PRIORITY_DAYNIGHT 		5 //WEEBCITY - JTGSZ CHANGE - Daynight lighting subsystem
 #define FIRE_PRIORITY_NANOMOB       10
 #define FIRE_PRIORITY_NIGHTSHIFT	10
 #define FIRE_PRIORITY_IDLE_NPC		10

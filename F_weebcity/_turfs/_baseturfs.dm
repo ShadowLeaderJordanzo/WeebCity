@@ -6,9 +6,9 @@ LAZY ASS TURF DEFINITION
 	icon = 'F_weebcity/icons/turfs/desertsand.dmi'
 	icon_state = "sand1"
 	gender = PLURAL
-	light_range = 2
-	light_power = 0.75
-	light_color = LIGHT_COLOR_LAVA
+	//light_range = 2
+	//light_power = 0.75
+	//light_color = LIGHT_COLOR_WHITE
 	footstep = FOOTSTEP_LAVA
 	barefootstep = FOOTSTEP_LAVA
 	clawfootstep = FOOTSTEP_LAVA

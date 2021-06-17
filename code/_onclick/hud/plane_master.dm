@@ -43,3 +43,4 @@
 /obj/screen/plane_master/lighting/backdrop(mob/mymob)
 	mymob.overlay_fullscreen("lighting_backdrop_lit", /obj/screen/fullscreen/lighting_backdrop/lit)
 	mymob.overlay_fullscreen("lighting_backdrop_unlit", /obj/screen/fullscreen/lighting_backdrop/unlit)
+	mymob.overlay_fullscreen("sunlight_backdrop", /obj/screen/fullscreen/lighting_backdrop/Sunlight) // WEEBCITY - JTGSZ CHANGE - Sunlighting

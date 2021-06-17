@@ -10,6 +10,7 @@
 #define DEBUG
 // END_PREFERENCES
 // BEGIN_INCLUDE
+#include "__weebcity_DEFINES\sunlighting.dm"
 #include "_maps\__MAP_DEFINES.dm"
 #include "_maps\base_map.dm"
 #include "_maps\map_datums.dm"
@@ -2496,10 +2497,13 @@
 #include "code\modules\world_topic\ping.dm"
 #include "code\modules\world_topic\players.dm"
 #include "code\modules\world_topic\status.dm"
-#include "F_weebcity\_map_datums\maps.dm"
-#include "F_weebcity\_map_helpers\areas.dm"
-#include "F_weebcity\_map_helpers\landmarks.dm"
+#include "F_weebcity\__subsystems\daynightcycle\misc_daynight.dm"
+#include "F_weebcity\__subsystems\daynightcycle\SS_daynight.dm"
+#include "F_weebcity\__subsystems\daynightcycle\sunlight_object.dm"
 #include "F_weebcity\_turfs\_baseturfs.dm"
+#include "F_weebcity\mapping\map_datums\maps.dm"
+#include "F_weebcity\mapping\map_helpers\areas.dm"
+#include "F_weebcity\mapping\map_helpers\landmarks.dm"
 #include "goon\code\datums\browserOutput.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
