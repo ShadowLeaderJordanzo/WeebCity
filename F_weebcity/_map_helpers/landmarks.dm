@@ -15,13 +15,13 @@
     name = "Observer-Start"
 
 /obj/effect/landmark/starts/hos
-    name = "Sheriff"
+    name = "Head of Security"
 
 /obj/effect/landmark/starts/civilian
     name = "Civilian"
 
 /obj/effect/landmark/starts/sec_officer
-    name = "Police Officer"
+    name = "Security Officer"
 
 /obj/effect/landmark/starts/brig_phys
     name = "Brig Physician"
@@ -39,22 +39,22 @@
     name = "Mime"
 
 /obj/effect/landmark/starts/clown
-    name = "News Anchor"
+    name = "Clown"
 
 /obj/effect/landmark/starts/magistrate
     name = "Magistrate"
 
 /obj/effect/landmark/starts/internal_affairs
-    name = "Lawyer"
+    name = "Internal Affairs Agent"
 
 /obj/effect/landmark/starts/cargo_tech
-    name = "Crew Member"
+    name = "Cargo Technician"
 
 /obj/effect/landmark/starts/quartermaster
-    name = "Manager"
+    name = "Quartermaster"
 
 /obj/effect/landmark/starts/station_engineer
-    name = "Engineer"
+    name = "Station Engineer"
 
 /obj/effect/landmark/starts/cyborg
     name = "Cyborg"
@@ -63,13 +63,13 @@
     name = "Chief Engineer"
 
 /obj/effect/landmark/starts/captain
-    name = "Mayor"
+    name = "Captain"
 
 /obj/effect/landmark/starts/artificial_intelligence
     name = "AI"
 
 /obj/effect/landmark/starts/janitor
-    name = "Waste Collector"
+    name = "Janitor"
 
 /obj/effect/landmark/starts/mechanic
     name = "Mechanic"
@@ -78,7 +78,7 @@
     name = "Life Support Specialist"
 
 /obj/effect/landmark/starts/cmo
-    name = "Medical Administrator"
+    name = "Chief Medical Officer"
 
 /obj/effect/landmark/starts/med_doc
     name = "Medical Doctor"
@@ -89,11 +89,11 @@
 /obj/effect/landmark/starts/chemist
     name = "Chemist"
 
-//obj/effect/landmark/starts/geneticist
-//    name = "Geneticist"
+/obj/effect/landmark/starts/geneticist
+    name = "Geneticist"
 
-//obj/effect/landmark/starts/virologist
- //   name = "Virologist"
+/obj/effect/landmark/starts/virologist
+    name = "Virologist"
 
 /obj/effect/landmark/starts/psychiatrist
     name = "Psychiatrist"
@@ -126,7 +126,7 @@
     name = "Chef"
 
 /obj/effect/landmark/starts/botanist
-    name = "Farmer"
+    name = "Botanist"
 
 /obj/effect/landmark/starts/librarian
     name = "Librarian"
