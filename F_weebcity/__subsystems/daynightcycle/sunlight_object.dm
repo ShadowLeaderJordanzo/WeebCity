@@ -43,7 +43,6 @@ Sunlight System
 	/* misc vars */
 	var/list/turf/neighbourTurfs = list()
 	var/state 					 = SUNLIGHT_OUTDOOR
-	var/turf/roofTurf
 	var/turf/source_turf
 	var/list/datum/lighting_corner/affectingCorners
 
