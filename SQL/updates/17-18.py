@@ -361,7 +361,7 @@ def parse_multirow(var_name, var_value, details, multirows_completed):
         multirows_completed += keys
         return details
     elif var_name in ("cyborg_engineering", "cyborg_janitor", "cyborg_medical", "cyborg_miner", "cyborg_peacekeeper", "cyborg_security", "cyborg_service", "cyborg_standard"):
-        module_vars = {"cyborg_engineering":"Engineering", "cyborg_janitor":"Janitor", "cyborg_medical":"Medical", "cyborg_miner":"Miner", "cyborg_peacekeeper":"Peacekeeper", "cyborg_security":"Security", "cyborg_service":"Service", "cyborg_standard":"Standard"}
+        module_vars = {"cyborg_engineering":"Engineering", "cyborg_janitor":"Waste Collector", "cyborg_medical":"Medical", "cyborg_miner":"Miner", "cyborg_peacekeeper":"Peacekeeper", "cyborg_security":"Security", "cyborg_service":"Service", "cyborg_standard":"Standard"}
         details = {module_vars[var_name]:var_value}
         del module_vars[var_name]
         query_where = "round_id = {0} AND (".format(query_row[2])

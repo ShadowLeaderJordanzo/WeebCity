@@ -15,22 +15,21 @@
     name = "Observer-Start"
 
 /obj/effect/landmark/starts/hos
-    name = "Head of Security"
+    name = "Sheriff"
 
 /obj/effect/landmark/starts/civilian
     name = "Civilian"
 
 /obj/effect/landmark/starts/sec_officer
-    name = "Security Officer"
+    name = "Police Officer"
 
-/obj/effect/landmark/starts/brig_phys
-    name = "Brig Physician"
+///obj/effect/landmark/starts/brig_phys
+//    name = "Brig Physician"
 
-/obj/effect/landmark/starts/warden
-    name = "Warden"
+///    name = "Warden"
 
-/obj/effect/landmark/starts/shaft_miner
-    name = "Shaft Miner"
+//obj/effect/landmark/starts/shaft_miner
+//    name = "Shaft Miner"
 
 /obj/effect/landmark/starts/detective
     name = "Detective"
@@ -39,37 +38,37 @@
     name = "Mime"
 
 /obj/effect/landmark/starts/clown
-    name = "Clown"
+    name = "News Anchor"
 
-/obj/effect/landmark/starts/magistrate
-    name = "Magistrate"
+//obj/effect/landmark/starts/magistrate
+//    name = "Magistrate"
 
 /obj/effect/landmark/starts/internal_affairs
-    name = "Internal Affairs Agent"
+    name = "Lawyer"
 
 /obj/effect/landmark/starts/cargo_tech
-    name = "Cargo Technician"
+    name = "Crew Member"
 
 /obj/effect/landmark/starts/quartermaster
-    name = "Quartermaster"
+    name = "Manager"
 
 /obj/effect/landmark/starts/station_engineer
-    name = "Station Engineer"
+    name = "Engineer"
 
-/obj/effect/landmark/starts/cyborg
-    name = "Cyborg"
+//obj/effect/landmark/starts/cyborg
+ //   name = "Cyborg"
 
 /obj/effect/landmark/starts/chief_engineer
     name = "Chief Engineer"
 
 /obj/effect/landmark/starts/captain
-    name = "Captain"
+    name = "Mayor"
 
-/obj/effect/landmark/starts/artificial_intelligence
-    name = "AI"
+//obj/effect/landmark/starts/artificial_intelligence
+//    name = "AI"
 
 /obj/effect/landmark/starts/janitor
-    name = "Janitor"
+    name = "Waste Collector"
 
 /obj/effect/landmark/starts/mechanic
     name = "Mechanic"
@@ -78,28 +77,28 @@
     name = "Life Support Specialist"
 
 /obj/effect/landmark/starts/cmo
-    name = "Chief Medical Officer"
+    name = "Medical Administrator"
 
 /obj/effect/landmark/starts/med_doc
     name = "Medical Doctor"
 
-/obj/effect/landmark/starts/coroner
-    name = "Coroner"
+///obj/effect/landmark/starts/coroner
+///    name = "Coroner"
 
-/obj/effect/landmark/starts/chemist
-    name = "Chemist"
+//obj/effect/landmark/starts/chemist
+///    name = "Chemist"
 
-/obj/effect/landmark/starts/geneticist
-    name = "Geneticist"
+//obj/effect/landmark/starts/geneticist
+//    name = "Geneticist"
 
-/obj/effect/landmark/starts/virologist
-    name = "Virologist"
+//obj/effect/landmark/starts/virologist
+ //   name = "Virologist"
 
-/obj/effect/landmark/starts/psychiatrist
-    name = "Psychiatrist"
+//obj/effect/landmark/starts/psychiatrist
+//    name = "Psychiatrist"
 
-/obj/effect/landmark/starts/paramed
-    name = "Paramedic"
+//obj/effect/landmark/starts/paramed
+//    name = "Paramedic"
 
 /obj/effect/landmark/starts/research_director
     name = "Research Director"
@@ -107,14 +106,14 @@
 /obj/effect/landmark/starts/scientist
     name = "Scientist"
 
-/obj/effect/landmark/starts/roboticist
-    name = "Roboticist"
+//obj/effect/landmark/starts/roboticist
+ //   name = "Roboticist"
 
-/obj/effect/landmark/starts/nanotrasen_rep
-    name = "Nanotrasen Representative"
+//obj/effect/landmark/starts/nanotrasen_rep
+ //   name = "Nanotrasen Representative"
 
-/obj/effect/landmark/starts/blueshield
-    name = "Blueshield"
+//obj/effect/landmark/starts/blueshield
+//    name = "Blueshield"
 
 /obj/effect/landmark/starts/chaplain
     name = "Chaplain"
@@ -126,10 +125,10 @@
     name = "Chef"
 
 /obj/effect/landmark/starts/botanist
-    name = "Botanist"
+    name = "Farmer"
 
-/obj/effect/landmark/starts/librarian
-    name = "Librarian"
+//obj/effect/landmark/starts/librarian
+//    name = "Librarian"
 
-/obj/effect/landmark/starts/explorer
-    name = "Explorer"
+//obj/effect/landmark/starts/explorer
+//    name = "Explorer"

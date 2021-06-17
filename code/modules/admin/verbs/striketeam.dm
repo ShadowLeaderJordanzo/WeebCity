@@ -135,7 +135,7 @@ GLOBAL_VAR_INIT(sent_strike_team, 0)
 
 /client/proc/create_death_commando(obj/spawn_location, is_leader = FALSE)
 	var/mob/living/carbon/human/new_commando = new(spawn_location.loc)
-	var/commando_leader_rank = pick("Lieutenant", "Captain", "Major")
+	var/commando_leader_rank = pick("Lieutenant", "Mayor", "Major")
 	var/commando_name = pick(GLOB.commando_names)
 
 	var/datum/preferences/A = new()//Randomize appearance for the commando.

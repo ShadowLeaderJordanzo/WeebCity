@@ -61,31 +61,6 @@
 		to_chat(owner.current,"<span class='userdanger'> You are no longer a [special_role]! </span>")
 	..()
 
-
-/datum/antagonist/traitor/apply_innate_effects()
-	. = ..()
-	if(owner.assigned_role == "Clown")
-		var/mob/living/carbon/human/traitor_mob = owner.current
-		if(traitor_mob && istype(traitor_mob))
-			to_chat(traitor_mob, "<span class='warning'>Your training has allowed you to overcome your clownish nature, allowing you to wield weapons without harming yourself.</span>")
-			traitor_mob.dna.SetSEState(GLOB.clumsyblock, FALSE)
-			singlemutcheck(traitor_mob, GLOB.clumsyblock, MUTCHK_FORCED)
-			var/datum/action/innate/toggle_clumsy/A = new
-			A.Grant(traitor_mob)
-
-
-/datum/antagonist/traitor/remove_innate_effects()
-	. = ..()
-	if(owner.assigned_role == "Clown")
-		var/mob/living/carbon/human/traitor_mob = owner.current
-		if(traitor_mob && istype(traitor_mob))
-			to_chat(traitor_mob, "<span class='warning'>You lose your syndicate training and return to your own clumsy, clownish self.</span>")
-			traitor_mob.dna.SetSEState(GLOB.clumsyblock, TRUE)
-			singlemutcheck(traitor_mob, GLOB.clumsyblock, MUTCHK_FORCED)
-			for(var/datum/action/innate/A in traitor_mob.actions)
-				if(istype(A, /datum/action/innate/toggle_clumsy))
-					A.Remove(traitor_mob)
-
 // Adding/removing objectives in the owner's mind until we can datumize all antags. Then we can use the /datum/antagonist/objectives var to handle them
 // Change "owner.objectives" to "objectives" once objectives are handled in antag datums instead of the mind
 /datum/antagonist/traitor/proc/add_objective(datum/objective/O)

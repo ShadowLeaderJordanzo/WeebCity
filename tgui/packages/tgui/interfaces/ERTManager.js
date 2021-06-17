@@ -92,7 +92,7 @@ export const ERTManager = (props, context) => {
                 />
               ))}
             </LabeledList.Item>
-            <LabeledList.Item label="Janitor">
+            <LabeledList.Item label="Waste Collector">
               {slotOptions.map((a, i) => (
                 <Button
                   key={"jan" + a}

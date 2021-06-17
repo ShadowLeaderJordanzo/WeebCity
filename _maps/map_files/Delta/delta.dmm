@@ -8993,7 +8993,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start{
-	name = "Janitor"
+	name = "Waste Collector"
 	},
 /turf/simulated/floor/plating,
 /area/janitor)
@@ -9026,7 +9026,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/start{
-	name = "Janitor"
+	name = "Waste Collector"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 5;
@@ -10669,7 +10669,7 @@
 	level = 1
 	},
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -13723,7 +13723,7 @@
 /area/quartermaster/storage)
 "aIe" = (
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
 /turf/simulated/floor/plasteel{
@@ -15957,7 +15957,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 9;
@@ -17387,7 +17387,7 @@
 "aOQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
 /turf/simulated/floor/plasteel{
@@ -18111,7 +18111,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -20881,7 +20881,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -21625,7 +21625,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -21960,7 +21960,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Quartermaster"
+	name = "Manager"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -24487,7 +24487,7 @@
 "bbc" = (
 /obj/structure/chair/office/dark,
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 2;
@@ -24545,7 +24545,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/hologram/holopad,
 /obj/effect/landmark/start{
-	name = "Quartermaster"
+	name = "Manager"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -24569,7 +24569,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/mining/glass{
-	name = "Quartermaster";
+	name = "Manager";
 	req_access_txt = "41"
 	},
 /obj/structure/disposalpipe/segment{
@@ -28394,7 +28394,7 @@
 	pixel_y = 28
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 5;
@@ -29324,7 +29324,7 @@
 "bki" = (
 /obj/structure/chair/office/dark,
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 0;
@@ -30256,7 +30256,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 4;
@@ -30369,7 +30369,7 @@
 	pixel_y = 32
 	},
 /obj/effect/landmark/start{
-	name = "Head of Security"
+	name = "Sheriff"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "grimy"
@@ -30677,7 +30677,7 @@
 /area/hydroponics)
 "bmR" = (
 /obj/effect/landmark/start{
-	name = "Botanist"
+	name = "Farmer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -31002,7 +31002,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 4;
@@ -31913,7 +31913,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/command/glass{
-	name = "Head of Security";
+	name = "Sheriff";
 	req_access_txt = "58"
 	},
 /turf/simulated/floor/plasteel{
@@ -31997,7 +31997,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Head of Security"
+	name = "Sheriff"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "grimy"
@@ -32049,7 +32049,7 @@
 	tag = ""
 	},
 /obj/machinery/door/airlock/command/glass{
-	name = "Head of Security";
+	name = "Sheriff";
 	req_access_txt = "58"
 	},
 /turf/simulated/floor/plasteel{
@@ -32631,7 +32631,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Botanist"
+	name = "Farmer"
 	},
 /obj/effect/decal/warning_stripes/yellow/hollow,
 /turf/simulated/floor/plasteel,
@@ -33065,7 +33065,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 4;
@@ -34142,7 +34142,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 4;
@@ -34905,7 +34905,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -45056,7 +45056,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "grimy"
@@ -49518,7 +49518,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "Secretary";
 	req_access = null;
 	req_access_txt = "57"
 	},
@@ -49651,7 +49651,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/captain)
@@ -51022,7 +51022,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "white"
@@ -52286,7 +52286,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Head of Personnel"
+	name = "Secretary"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 5;
@@ -55267,7 +55267,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "grimy"
@@ -55361,7 +55361,7 @@
 	pixel_y = 0
 	},
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/captain/bedroom)
@@ -55539,7 +55539,7 @@
 	dir = 10
 	},
 /obj/effect/landmark/start{
-	name = "Internal Affairs Agent"
+	name = "Lawyer"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "grimy"
@@ -55579,7 +55579,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -55961,7 +55961,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /obj/effect/decal/warning_stripes/south,
 /turf/simulated/floor/plasteel,
@@ -56707,7 +56707,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/brig)
@@ -56721,7 +56721,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/brig)
@@ -56733,7 +56733,7 @@
 	tag = ""
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/brig)
@@ -56772,7 +56772,7 @@
 	on = 1
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/brig)
@@ -57187,7 +57187,7 @@
 	},
 /obj/structure/chair/office/dark,
 /obj/effect/landmark/start{
-	name = "Head of Personnel"
+	name = "Secretary"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
@@ -57445,7 +57445,7 @@
 	shock_proof = 0
 	},
 /obj/effect/landmark/start{
-	name = "Internal Affairs Agent"
+	name = "Lawyer"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "wood"
@@ -57781,7 +57781,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -57805,7 +57805,7 @@
 /area/crew_quarters/courtroom)
 "cgM" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 4;
@@ -58550,7 +58550,7 @@
 /area/engine/engineering)
 "cim" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -60504,7 +60504,7 @@
 	pixel_y = 26
 	},
 /obj/effect/landmark/start{
-	name = "Head of Personnel"
+	name = "Secretary"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "grimy"
@@ -61970,7 +61970,7 @@
 	opacity = 0
 	},
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "Secretary";
 	req_access = null;
 	req_access_txt = "57"
 	},
@@ -62365,7 +62365,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "yellowfull"
@@ -91055,7 +91055,7 @@
 	tag = ""
 	},
 /obj/machinery/door/airlock/command/glass{
-	name = "Chief Medical Officer";
+	name = "Medical Administrator";
 	req_access_txt = "40"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -91570,7 +91570,7 @@
 	level = 1
 	},
 /obj/machinery/door/airlock/command/glass{
-	name = "Chief Medical Officer";
+	name = "Medical Administrator";
 	req_access_txt = "40"
 	},
 /turf/simulated/floor/plasteel,
@@ -93862,7 +93862,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Chief Medical Officer"
+	name = "Medical Administrator"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -96477,7 +96477,7 @@
 	pixel_y = 0
 	},
 /obj/effect/landmark/start{
-	name = "Chief Medical Officer"
+	name = "Medical Administrator"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "dark"

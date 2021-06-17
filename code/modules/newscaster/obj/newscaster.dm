@@ -67,19 +67,8 @@
 	. = ..()
 	if(!jobblacklist)
 		jobblacklist = list(
-			/datum/job/ai,
-			/datum/job/cyborg,
 			/datum/job/captain,
-			/datum/job/judge,
-			/datum/job/blueshield,
-			/datum/job/nanotrasenrep,
-			/datum/job/pilot,
-			/datum/job/brigdoc,
-			/datum/job/mechanic,
-			/datum/job/barber,
 			/datum/job/chaplain,
-			/datum/job/ntnavyofficer,
-			/datum/job/ntspecops,
 			/datum/job/civilian,
 			/datum/job/syndicateofficer
 		)

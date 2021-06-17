@@ -30,19 +30,19 @@
 /datum/theft_objective/antique_laser_gun
 	name = "the captain's antique laser gun"
 	typepath = /obj/item/gun/energy/laser/captain
-	protected_jobs = list("Captain")
+	protected_jobs = list("Mayor")
 	location_override = "the Captain's Office"
 
 /datum/theft_objective/captains_jetpack
 	name = "the captain's deluxe jetpack"
 	typepath = /obj/item/tank/jetpack/oxygen/captain
-	protected_jobs = list("Captain")
+	protected_jobs = list("Mayor")
 	location_override = "the Captain's Office"
 
 /datum/theft_objective/captains_rapier
 	name = "the captain's rapier"
 	typepath = /obj/item/melee/rapier
-	protected_jobs = list("Captain")
+	protected_jobs = list("Mayor")
 	location_override = "the Captain's Office"
 
 /datum/theft_objective/hoslaser
@@ -54,7 +54,7 @@
 /datum/theft_objective/hand_tele
 	name = "a hand teleporter"
 	typepath = /obj/item/hand_tele
-	protected_jobs = list("Captain", "Research Director", "Chief Engineer")
+	protected_jobs = list("Mayor", "Research Director", "Chief Engineer")
 	location_override = "Teleporter"
 
 /datum/theft_objective/ai
@@ -72,7 +72,7 @@
 /datum/theft_objective/defib
 	name = "a compact defibrillator"
 	typepath = /obj/item/defibrillator/compact
-	protected_jobs = list("Chief Medical Officer", "Paramedic")
+	protected_jobs = list("Medical Administrator", "Paramedic")
 	location_override = "the Chief Medical Officer's Office"
 
 /datum/theft_objective/magboots
@@ -100,13 +100,13 @@
 /datum/theft_objective/capmedal
 	name = "the medal of captaincy"
 	typepath = /obj/item/clothing/accessory/medal/gold/captain
-	protected_jobs = list("Captain")
+	protected_jobs = list("Mayor")
 	location_override = "the Captain's Office"
 
 /datum/theft_objective/nukedisc
 	name = "the nuclear authentication disk"
 	typepath = /obj/item/disk/nuclear
-	protected_jobs = list("Captain")
+	protected_jobs = list("Mayor")
 	location_override = "the Captain's Office"
 
 /datum/theft_objective/reactive
@@ -123,13 +123,13 @@
 /datum/theft_objective/hypospray
 	name = "the Chief Medical Officer's hypospray"
 	typepath = /obj/item/reagent_containers/hypospray/CMO
-	protected_jobs = list("Chief Medical Officer")
+	protected_jobs = list("Medical Administrator")
 	location_override = "the Chief Medical Officer's Office"
 
 /datum/theft_objective/ablative
 	name = "an ablative armor vest"
 	typepath = /obj/item/clothing/suit/armor/laserproof
-	protected_jobs = list("Head of Security", "Warden")
+	protected_jobs = list("Sheriff", "Warden")
 	location_override = "the Armory"
 
 /datum/theft_objective/krav

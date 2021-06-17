@@ -28,29 +28,17 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	var/change_position_cooldown = 60
 	// Jobs that do not appear in the list at all.
 	var/list/blacklisted_full = list(
-		/datum/job/ntnavyofficer,
-		/datum/job/ntspecops,
 		/datum/job/civilian,
-		/datum/job/syndicateofficer,
-		/datum/job/explorer // blacklisted so that HOPs don't try prioritizing it, then wonder why that doesn't work
+		/datum/job/syndicateofficer, // blacklisted so that HOPs don't try prioritizing it, then wonder why that doesn't work
 	)
 	// Jobs that appear in the list, and you can prioritize, but not open/close slots for
 	var/list/blacklisted_partial = list(
-		/datum/job/ai,
-		/datum/job/cyborg,
 		/datum/job/captain,
 		/datum/job/hop,
 		/datum/job/hos,
 		/datum/job/chief_engineer,
 		/datum/job/rd,
 		/datum/job/cmo,
-		/datum/job/judge,
-		/datum/job/blueshield,
-		/datum/job/nanotrasenrep,
-		/datum/job/pilot,
-		/datum/job/brigdoc,
-		/datum/job/mechanic,
-		/datum/job/barber,
 		/datum/job/chaplain
 	)
 	//The scaling factor of max total positions in relation to the total amount of people on board the station in %
@@ -335,13 +323,13 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 					data["canterminate"] = has_idchange_access()
 				else
 					data["account_number"] = modify ? modify.associated_account_number : null
-					data["jobs_top"] = list("Captain", "Custom")
+					data["jobs_top"] = list("Mayor", "Custom")
 					data["jobs_engineering"] = GLOB.engineering_positions
 					data["jobs_medical"] = GLOB.medical_positions
 					data["jobs_science"] = GLOB.science_positions
 					data["jobs_security"] = GLOB.security_positions
 					data["jobs_service"] = GLOB.service_positions
-					data["jobs_supply"] = GLOB.supply_positions - "Head of Personnel"
+					data["jobs_supply"] = GLOB.supply_positions - "Secretary"
 					data["jobs_civilian"] = GLOB.civilian_positions
 					data["jobs_karma"] = GLOB.whitelisted_positions
 					data["jobs_centcom"] = get_all_centcom_jobs()

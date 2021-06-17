@@ -91,7 +91,7 @@
 		var/mob/living/carbon/human/H = user
 		for(var/obj/item/W in H)
 			H.unEquip(W)
-		var/datum/job/clown/C = SSjobs.GetJob("Clown")
+		var/datum/job/newsanchor/C = SSjobs.GetJob("Clown")
 		C.equip(H)
 		affected_targets.Add(H)
 

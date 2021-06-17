@@ -1616,7 +1616,7 @@
 /obj/item/toy/figure/botanist
 	name = "Botanist action figure"
 	desc = "The drug-addicted botanist, from Space Life's SS12 figurine collection."
-	icon_state = "botanist"
+	icon_state = "Farmer"
 	toysay = "Dude, I see colors..."
 
 /obj/item/toy/figure/captain
@@ -1712,7 +1712,7 @@
 /obj/item/toy/figure/janitor
 	name = "Janitor action figure"
 	desc = "The water-using Janitor, from Space Life's SS12 figurine collection."
-	icon_state = "janitor"
+	icon_state = "Waste Collector"
 	toysay = "Look at the signs, you idiot."
 
 /obj/item/toy/figure/lawyer

@@ -72,8 +72,8 @@
 	active_with_role["Scientist"] = 0
 	active_with_role["AI"] = 0
 	active_with_role["Cyborg"] = 0
-	active_with_role["Janitor"] = 0
-	active_with_role["Botanist"] = 0
+	active_with_role["Waste Collector"] = 0
+	active_with_role["Farmer"] = 0
 	active_with_role["Any"] = GLOB.player_list.len
 
 	for(var/mob/M in GLOB.player_list)
@@ -91,10 +91,10 @@
 			if(R.module && (R.module.name == "security robot module"))
 				active_with_role["Security"]++
 
-		if(M.mind.assigned_role in list("Chief Engineer", "Station Engineer"))
+		if(M.mind.assigned_role in list("Chief Engineer", "Engineer"))
 			active_with_role["Engineer"]++
 
-		if(M.mind.assigned_role in list("Chief Medical Officer", "Medical Doctor"))
+		if(M.mind.assigned_role in list("Medical Administrator", "Medical Doctor"))
 			active_with_role["Medical"]++
 
 		if(M.mind.assigned_role in GLOB.security_positions)
@@ -109,11 +109,11 @@
 		if(M.mind.assigned_role == "Cyborg")
 			active_with_role["Cyborg"]++
 
-		if(M.mind.assigned_role == "Janitor")
-			active_with_role["Janitor"]++
+		if(M.mind.assigned_role == "Waste Collector")
+			active_with_role["Waste Collector"]++
 
-		if(M.mind.assigned_role == "Botanist")
-			active_with_role["Botanist"]++
+		if(M.mind.assigned_role == "Farmer")
+			active_with_role["Farmer"]++
 
 	return active_with_role
 

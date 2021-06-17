@@ -1585,7 +1585,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/janitor
 	name = "\improper Custodial Closet"
-	icon_state = "janitor"
+	icon_state = "Waste Collector"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/hydroponics

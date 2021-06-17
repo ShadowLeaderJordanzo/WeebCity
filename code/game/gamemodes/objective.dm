@@ -605,7 +605,7 @@ GLOBAL_LIST_INIT(potential_theft_objectives, (subtypesof(/datum/theft_objective)
 
 /datum/objective/heist/kidnap
 /datum/objective/heist/kidnap/choose_target()
-	var/list/roles = list("Chief Engineer","Research Director","Roboticist","Chemist","Station Engineer")
+	var/list/roles = list("Chief Engineer","Research Director","Roboticist","Chemist","Engineer")
 	var/list/possible_targets = list()
 	var/list/priority_targets = list()
 

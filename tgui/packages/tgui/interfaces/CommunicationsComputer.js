@@ -13,7 +13,7 @@ export const CommunicationsComputer = (props, context) => {
   } else if (data.authenticated === 1) {
     authReadable = "Command";
   } else if (data.authenticated === 2) {
-    authReadable = "Captain";
+    authReadable = "Mayor";
   } else if (data.authenticated === 3) {
     authReadable = "CentComm Secure Connection";
     authSpecial = true;

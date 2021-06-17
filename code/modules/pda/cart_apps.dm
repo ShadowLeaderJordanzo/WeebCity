@@ -304,7 +304,7 @@
 	name = "Delivery Bot Control"
 	icon = "truck"
 	template = "pda_mule"
-	category = "Quartermaster"
+	category = "Manager"
 
 /datum/data/pda/app/mule_control/update_ui(mob/user as mob, list/data)
 	var/list/muleData = list()
@@ -392,7 +392,7 @@
 	name = "Supply Records"
 	icon = "archive"
 	template = "pda_supplyrecords"
-	category = "Quartermaster"
+	category = "Manager"
 	update = PDA_APP_UPDATE_SLOW
 
 /datum/data/pda/app/supply/update_ui(mob/user as mob, list/data)
@@ -492,4 +492,4 @@
 	JaniData["buckets"] = BucketData.len ? BucketData : null
 	JaniData["cleanbots"] = CbotData.len ? CbotData : null
 	JaniData["carts"] = CartData.len ? CartData : null
-	data["janitor"] = JaniData
+	data["Waste Collector"] = JaniData

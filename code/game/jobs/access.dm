@@ -245,7 +245,7 @@
 		if(ACCESS_HEADS)
 			return "Bridge"
 		if(ACCESS_CAPTAIN)
-			return "Captain"
+			return "Mayor"
 		if(ACCESS_ALL_PERSONAL_LOCKERS)
 			return "Personal Lockers"
 		if(ACCESS_CHAPEL_OFFICE)
@@ -275,9 +275,9 @@
 		if(ACCESS_PSYCHIATRIST)
 			return "Psychiatrist's Office"
 		if(ACCESS_CMO)
-			return "Chief Medical Officer"
+			return "Medical Administrator"
 		if(ACCESS_QM)
-			return "Quartermaster"
+			return "Manager"
 		if(ACCESS_CLOWN)
 			return "Clown's Office"
 		if(ACCESS_MIME)
@@ -309,9 +309,9 @@
 		if(ACCESS_XENOARCH)
 			return "Xenoarchaeology"
 		if(ACCESS_HOP)
-			return "Head of Personnel"
+			return "Secretary"
 		if(ACCESS_HOS)
-			return "Head of Security"
+			return "Sheriff"
 		if(ACCESS_CE)
 			return "Chief Engineer"
 		if(ACCESS_RC_ANNOUNCE)
@@ -390,7 +390,6 @@
 /proc/get_all_jobs()
 	var/list/all_jobs = list()
 	var/list/all_datums = subtypesof(/datum/job)
-	all_datums.Remove(list(/datum/job/ai,/datum/job/cyborg))
 	var/datum/job/jobdatum
 	for(var/jobtype in all_datums)
 		jobdatum = new jobtype

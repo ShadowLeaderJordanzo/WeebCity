@@ -34,7 +34,7 @@
 	for(var/path in (subtypesof(/datum/surgery)))
 		GLOB.surgeries_list += new path()
 
-	init_datum_subtypes(/datum/job, GLOB.joblist, list(/datum/job/ai, /datum/job/cyborg), "title")
+	init_datum_subtypes(/datum/job, GLOB.joblist, null, "title")
 	init_datum_subtypes(/datum/superheroes, GLOB.all_superheroes, null, "name")
 	init_datum_subtypes(/datum/language, GLOB.all_languages, null, "name")
 
@@ -47,7 +47,7 @@
 			GLOB.language_keys["#[lowertext(L.key)]"] = L
 
 	var/rkey = 0
-	for(var/spath in subtypesof(/datum/species))
+	for(var/spath in typesof(/datum/species/human))
 		var/datum/species/S = new spath()
 		S.race_key = ++rkey //Used in mob icon caching.
 		GLOB.all_species[S.name] = S
