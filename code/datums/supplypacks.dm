@@ -1564,7 +1564,7 @@ GLOBAL_LIST_INIT(all_supply_groups, list(SUPPLY_EMERGENCY,SUPPLY_SECURITY,SUPPLY
 					/obj/item/grenade/chem_grenade/cleaner)
 	cost = 10
 	containername = "janitorial supplies crate"
-	announce_beacons = list("Janitor" = list("Janitorial"))
+	announce_beacons = list("Waste Collector" = list("Janitorial"))
 
 /datum/supply_packs/misc/janitor/janicart
 	name = "Janitorial Cart and Galoshes Crate"

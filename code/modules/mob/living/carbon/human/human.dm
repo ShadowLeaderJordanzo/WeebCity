@@ -1553,7 +1553,7 @@ Eyes need to have significantly high darksight to shine unless the mob has the X
 /mob/living/carbon/human/singularity_act()
 	. = 20
 	if(mind)
-		if((mind.assigned_role == "Station Engineer") || (mind.assigned_role == "Chief Engineer") )
+		if((mind.assigned_role == "Engineer") || (mind.assigned_role == "Chief Engineer") )
 			. = 100
 		if(mind.assigned_role == "Clown")
 			. = rand(-1000, 1000)

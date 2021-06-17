@@ -6,7 +6,7 @@
 	spawn_positions = 1
 	is_engineering = 1
 	supervisors = "the captain"
-	department_head = list("Captain")
+	department_head = list("Mayor")
 	selection_color = "#ffeeaa"
 	req_admin_notify = 1
 	access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS,
@@ -46,7 +46,7 @@
 
 
 /datum/job/engineer
-	title = "Station Engineer"
+	title = "Engineer"
 	flag = JOB_ENGINEER
 	department_flag = JOBCAT_ENGSEC
 	total_positions = 5
@@ -57,14 +57,14 @@
 	selection_color = "#fff5cc"
 	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_MINERAL_STOREROOM)
 	minimal_access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_MINERAL_STOREROOM)
-	alt_titles = list("Maintenance Technician","Engine Technician","Electrician")
+
 	minimal_player_age = 7
 	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
 	outfit = /datum/outfit/job/engineer
 
 /datum/outfit/job/engineer
-	name = "Station Engineer"
+	name = "Engineer"
 	jobtype = /datum/job/engineer
 
 	uniform = /obj/item/clothing/under/rank/engineer
@@ -81,73 +81,3 @@
 	dufflebag = /obj/item/storage/backpack/duffel/engineering
 	box = /obj/item/storage/box/engineer
 
-
-
-/datum/job/atmos
-	title = "Life Support Specialist"
-	flag = JOB_ATMOSTECH
-	department_flag = JOBCAT_ENGSEC
-	total_positions = 3
-	spawn_positions = 2
-	is_engineering = 1
-	supervisors = "the chief engineer"
-	department_head = list("Chief Engineer")
-	selection_color = "#fff5cc"
-	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_EVA, ACCESS_ATMOSPHERICS, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_EMERGENCY_STORAGE, ACCESS_CONSTRUCTION, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
-	alt_titles = list("Atmospheric Technician")
-	minimal_player_age = 7
-	exp_requirements = 300
-	exp_type = EXP_TYPE_CREW
-	outfit = /datum/outfit/job/atmos
-
-/datum/outfit/job/atmos
-	name = "Life Support Specialist"
-	jobtype = /datum/job/atmos
-
-	uniform = /obj/item/clothing/under/rank/atmospheric_technician
-	belt = /obj/item/storage/belt/utility/atmostech
-	shoes = /obj/item/clothing/shoes/workboots
-	l_ear = /obj/item/radio/headset/headset_eng
-	id = /obj/item/card/id/engineering
-	pda = /obj/item/pda/atmos
-
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel_eng
-	dufflebag = /obj/item/storage/backpack/duffel/atmos
-	box = /obj/item/storage/box/engineer
-
-/datum/job/mechanic
-	title = "Mechanic"
-	flag = JOB_MECHANIC
-	department_flag = JOBCAT_KARMA
-	total_positions = 1
-	spawn_positions = 1
-	is_engineering = 1
-	supervisors = "the chief engineer"
-	department_head = list("Chief Engineer")
-	selection_color = "#fff5cc"
-	access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_MECHANIC, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_EMERGENCY_STORAGE, ACCESS_MECHANIC, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_MINERAL_STOREROOM)
-	outfit = /datum/outfit/job/mechanic
-
-/datum/outfit/job/mechanic
-	name = "Mechanic"
-	jobtype = /datum/job/mechanic
-
-	uniform = /obj/item/clothing/under/rank/mechanic
-	belt = /obj/item/storage/belt/utility/full
-	shoes = /obj/item/clothing/shoes/workboots
-	head = /obj/item/clothing/head/hardhat
-	l_ear = /obj/item/radio/headset/headset_eng
-	id = /obj/item/card/id/engineering
-	r_pocket = /obj/item/t_scanner
-	pda = /obj/item/pda/engineering
-	backpack_contents = list(
-		/obj/item/pod_paint_bucket = 1
-	)
-
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel_eng
-	dufflebag = /obj/item/storage/backpack/duffel/engineering
-	box = /obj/item/storage/box/engineer

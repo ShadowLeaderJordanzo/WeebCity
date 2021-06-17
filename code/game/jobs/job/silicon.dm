@@ -1,4 +1,4 @@
-/datum/job/ai
+/*/datum/job/ai
 	title = "AI"
 	flag = JOB_AI
 	department_flag = JOBCAT_ENGSEC
@@ -6,7 +6,7 @@
 	spawn_positions = 1
 	selection_color = "#ccffcc"
 	supervisors = "your laws"
-	department_head = list("Captain")
+	department_head = list("Mayor")
 	req_admin_notify = 1
 	minimal_player_age = 30
 	exp_requirements = 300
@@ -32,9 +32,9 @@
 	minimal_player_age = 21
 	exp_requirements = 300
 	exp_type = EXP_TYPE_CREW
-	alt_titles = list("Robot")
+	alt_titles = list()
 
 /datum/job/cyborg/equip(mob/living/carbon/human/H)
 	if(!H)
 		return 0
-	return H.Robotize()
+	return H.Robotize() */

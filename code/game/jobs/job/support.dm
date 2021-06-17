@@ -7,8 +7,8 @@
 	spawn_positions = 1
 	is_service = 1
 	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
-	selection_color = "#dddddd"
+	department_head = list("Secretary")
+	selection_color = "#b8871e"
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
 	minimal_access = list(ACCESS_BAR, ACCESS_MAINT_TUNNELS, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM)
 	outfit = /datum/outfit/job/bartender
@@ -48,11 +48,11 @@
 	spawn_positions = 1
 	is_service = 1
 	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
-	selection_color = "#dddddd"
+	department_head = list("Secretary")
+	selection_color = "#b8871e"
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE)
 	minimal_access = list(ACCESS_KITCHEN, ACCESS_MAINT_TUNNELS)
-	alt_titles = list("Cook","Culinary Artist","Butcher")
+	alt_titles = list("Cook","Culinary Artist")
 	outfit = /datum/outfit/job/chef
 
 /datum/outfit/job/chef
@@ -80,22 +80,21 @@
 
 
 /datum/job/hydro
-	title = "Botanist"
+	title = "Farmer"
 	flag = JOB_BOTANIST
 	department_flag = JOBCAT_SUPPORT
 	total_positions = 3
 	spawn_positions = 2
 	is_service = 1
 	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
-	selection_color = "#dddddd"
+	department_head = list("Secretary")
+	selection_color = "#b8871e"
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE)
 	minimal_access = list(ACCESS_HYDROPONICS, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS)
-	alt_titles = list("Hydroponicist", "Botanical Researcher")
 	outfit = /datum/outfit/job/hydro
 
 /datum/outfit/job/hydro
-	name = "Botanist"
+	name = "Farmer"
 	jobtype = /datum/job/hydro
 
 	uniform = /obj/item/clothing/under/rank/hydroponics
@@ -114,21 +113,21 @@
 
 //Cargo
 /datum/job/qm
-	title = "Quartermaster"
+	title = "Manager"
 	flag = JOB_QUARTERMASTER
 	department_flag = JOBCAT_SUPPORT
 	total_positions = 1
 	spawn_positions = 1
 	is_supply = 1
 	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
-	selection_color = "#dddddd"
+	department_head = list("Secretary")
+	selection_color = "#008d97"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINT, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
 	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINT, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
 	outfit = /datum/outfit/job/qm
 
 /datum/outfit/job/qm
-	name = "Quartermaster"
+	name = "Manager"
 	jobtype = /datum/job/qm
 
 	uniform = /obj/item/clothing/under/rank/cargo
@@ -142,21 +141,21 @@
 
 
 /datum/job/cargo_tech
-	title = "Cargo Technician"
+	title = "Crew Member"
 	flag = JOB_CARGOTECH
 	department_flag = JOBCAT_SUPPORT
 	total_positions = 2
 	spawn_positions = 2
 	is_supply = 1
 	supervisors = "the quartermaster"
-	department_head = list("Head of Personnel")
-	selection_color = "#dddddd"
+	department_head = list("Secretary")
+	selection_color = "#03bdca"
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINT, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
 	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
 	outfit = /datum/outfit/job/cargo_tech
 
 /datum/outfit/job/cargo_tech
-	name = "Cargo Technician"
+	name = "Crew Member"
 	jobtype = /datum/job/cargo_tech
 
 	uniform = /obj/item/clothing/under/rank/cargotech
@@ -167,68 +166,6 @@
 
 
 
-/datum/job/mining
-	title = "Shaft Miner"
-	flag = JOB_MINER
-	department_flag = JOBCAT_SUPPORT
-	total_positions = 6
-	spawn_positions = 8
-	is_supply = 1
-	supervisors = "the quartermaster"
-	department_head = list("Head of Personnel")
-	selection_color = "#dddddd"
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINT, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_MINING, ACCESS_MINT, ACCESS_MINING_STATION, ACCESS_MAILSORTING, ACCESS_MAINT_TUNNELS, ACCESS_MINERAL_STOREROOM)
-	alt_titles = list("Spelunker")
-	outfit = /datum/outfit/job/mining
-
-/datum/outfit/job/mining
-	name = "Shaft Miner"
-	jobtype = /datum/job/mining
-
-	l_ear = /obj/item/radio/headset/headset_cargo/mining
-	shoes = /obj/item/clothing/shoes/workboots/mining
-	gloves = /obj/item/clothing/gloves/color/black
-	uniform = /obj/item/clothing/under/rank/miner/lavaland
-	l_pocket = /obj/item/reagent_containers/hypospray/autoinjector/survival
-	r_pocket = /obj/item/storage/bag/ore
-	id = /obj/item/card/id/supply
-	pda = /obj/item/pda/shaftminer
-	backpack_contents = list(
-		/obj/item/flashlight/seclite=1,\
-		/obj/item/kitchen/knife/combat/survival=1,\
-		/obj/item/mining_voucher=1,\
-		/obj/item/stack/marker_beacon/ten=1
-	)
-
-	backpack = /obj/item/storage/backpack/explorer
-	satchel = /obj/item/storage/backpack/satchel/explorer
-	box = /obj/item/storage/box/survival_mining
-
-/datum/outfit/job/mining/equipped
-	name = "Shaft Miner"
-
-	suit = /obj/item/clothing/suit/hooded/explorer
-	mask = /obj/item/clothing/mask/gas/explorer
-	glasses = /obj/item/clothing/glasses/meson
-	suit_store = /obj/item/tank/internals/emergency_oxygen
-	internals_slot = slot_s_store
-	backpack_contents = list(
-		/obj/item/flashlight/seclite=1,\
-		/obj/item/kitchen/knife/combat/survival=1,
-		/obj/item/mining_voucher=1,
-		/obj/item/t_scanner/adv_mining_scanner/lesser=1,
-		/obj/item/gun/energy/kinetic_accelerator=1,\
-		/obj/item/stack/marker_beacon/ten=1
-	)
-
-/datum/outfit/job/miner/equipped/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	if(visualsOnly)
-		return
-	if(istype(H.wear_suit, /obj/item/clothing/suit/hooded))
-		var/obj/item/clothing/suit/hooded/S = H.wear_suit
-		S.ToggleHood()
 
 /datum/outfit/job/miner/equipped/hardsuit
 	name = "Shaft Miner (Equipment + Hardsuit)"
@@ -237,23 +174,23 @@
 
 //Griff //BS12 EDIT
 
-/datum/job/clown
-	title = "Clown"
+/datum/job/newsanchor //clown
+	title = "News Anchor"
 	flag = JOB_CLOWN
 	department_flag = JOBCAT_SUPPORT
 	total_positions = 1
 	spawn_positions = 1
 	is_service = 1
-	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
+	supervisors = "the Secretary"
+	department_head = list("Secretary")
 	selection_color = "#dddddd"
 	access = list(ACCESS_CLOWN, ACCESS_THEATRE, ACCESS_MAINT_TUNNELS)
 	minimal_access = list(ACCESS_CLOWN, ACCESS_THEATRE, ACCESS_MAINT_TUNNELS)
 	outfit = /datum/outfit/job/clown
 
 /datum/outfit/job/clown
-	name = "Clown"
-	jobtype = /datum/job/clown
+	name = "News Anchor"
+	jobtype = /datum/job/newsanchor
 
 	uniform = /obj/item/clothing/under/rank/clown
 	shoes = /obj/item/clothing/shoes/clown_shoes
@@ -288,43 +225,7 @@
 	. = ..()
 	if(visualsOnly)
 		return
-
-	if(ismachineperson(H))
-		var/obj/item/organ/internal/cyberimp/brain/clown_voice/implant = new
-		implant.insert(H)
-
-	H.dna.SetSEState(GLOB.clumsyblock, TRUE)
-	singlemutcheck(H, GLOB.clumsyblock, MUTCHK_FORCED)
-	H.dna.default_blocks.Add(GLOB.clumsyblock)
-	if(!ismachineperson(H))
-		H.dna.SetSEState(GLOB.comicblock, TRUE)
-		singlemutcheck(H, GLOB.comicblock, MUTCHK_FORCED)
-		H.dna.default_blocks.Add(GLOB.comicblock)
-	H.check_mutations = TRUE
-	H.add_language("Clownish")
-
-//action given to antag clowns
-/datum/action/innate/toggle_clumsy
-	name = "Toggle Clown Clumsy"
-	button_icon_state = "clown"
-
-/datum/action/innate/toggle_clumsy/Activate()
-	var/mob/living/carbon/human/H = owner
-	H.dna.SetSEState(GLOB.clumsyblock, TRUE)
-	singlemutcheck(H, GLOB.clumsyblock, MUTCHK_FORCED)
-	active = TRUE
-	background_icon_state = "bg_spell"
-	UpdateButtonIcon()
-	to_chat(H, "<span class='notice'>You start acting clumsy to throw suspicions off. Focus again before using weapons.</span>")
-
-/datum/action/innate/toggle_clumsy/Deactivate()
-	var/mob/living/carbon/human/H = owner
-	H.dna.SetSEState(GLOB.clumsyblock, FALSE)
-	singlemutcheck(H, GLOB.clumsyblock, MUTCHK_FORCED)
-	active = FALSE
-	background_icon_state = "bg_default"
-	UpdateButtonIcon()
-	to_chat(H, "<span class='notice'>You focus and can now use weapons regularly.</span>")
+// remove clown stuff
 
 /datum/job/mime
 	title = "Mime"
@@ -334,7 +235,7 @@
 	spawn_positions = 1
 	is_service = 1
 	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
+	department_head = list("Secretary")
 	selection_color = "#dddddd"
 	access = list(ACCESS_MIME, ACCESS_THEATRE, ACCESS_MAINT_TUNNELS)
 	minimal_access = list(ACCESS_MIME, ACCESS_THEATRE, ACCESS_MAINT_TUNNELS)
@@ -379,14 +280,14 @@
 
 
 /datum/job/janitor
-	title = "Janitor"
+	title = "Waste Collector"
 	flag = JOB_JANITOR
 	department_flag = JOBCAT_SUPPORT
 	total_positions = 1
 	spawn_positions = 1
 	is_service = 1
 	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
+	department_head = list("Secretary")
 	selection_color = "#dddddd"
 	access = list(ACCESS_JANITOR, ACCESS_MAINT_TUNNELS)
 	minimal_access = list(ACCESS_JANITOR, ACCESS_MAINT_TUNNELS)
@@ -394,7 +295,7 @@
 	outfit = /datum/outfit/job/janitor
 
 /datum/outfit/job/janitor
-	name = "Janitor"
+	name = "Waste Collector"
 	jobtype = /datum/job/janitor
 
 	uniform = /obj/item/clothing/under/rank/janitor
@@ -402,82 +303,3 @@
 	l_ear = /obj/item/radio/headset/headset_service
 	pda = /obj/item/pda/janitor
 
-
-//More or less assistants
-/datum/job/librarian
-	title = "Librarian"
-	flag = JOB_LIBRARIAN
-	department_flag = JOBCAT_SUPPORT
-	total_positions = 1
-	spawn_positions = 1
-	is_service = 1
-	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
-	selection_color = "#dddddd"
-	access = list(ACCESS_LIBRARY, ACCESS_MAINT_TUNNELS)
-	minimal_access = list(ACCESS_LIBRARY, ACCESS_MAINT_TUNNELS)
-	alt_titles = list("Journalist")
-	outfit = /datum/outfit/job/librarian
-
-/datum/outfit/job/librarian
-	name = "Librarian"
-	jobtype = /datum/job/librarian
-
-	uniform = /obj/item/clothing/under/suit_jacket/red
-	shoes = /obj/item/clothing/shoes/black
-	l_ear = /obj/item/radio/headset/headset_service
-	l_pocket = /obj/item/laser_pointer
-	r_pocket = /obj/item/barcodescanner
-	l_hand = /obj/item/storage/bag/books
-	pda = /obj/item/pda/librarian
-	backpack_contents = list(
-		/obj/item/videocam = 1)
-
-/datum/job/barber
-	title = "Barber"
-	flag = JOB_BARBER
-	department_flag = JOBCAT_KARMA
-	total_positions = 1
-	spawn_positions = 1
-	is_service = 1
-	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
-	selection_color = "#dddddd"
-	alt_titles = list("Hair Stylist","Beautician")
-	access = list(ACCESS_MAINT_TUNNELS)
-	minimal_access = list(ACCESS_MAINT_TUNNELS)
-	outfit = /datum/outfit/job/barber
-
-/datum/outfit/job/barber
-	name = "Barber"
-	jobtype = /datum/job/barber
-
-	uniform = /obj/item/clothing/under/barber
-	shoes = /obj/item/clothing/shoes/black
-	l_ear = /obj/item/radio/headset/headset_service
-	backpack_contents = list(
-		/obj/item/storage/box/lip_stick = 1,
-		/obj/item/storage/box/barber = 1
-	)
-
-/datum/job/explorer
-	title = "Explorer"
-	flag = JOB_EXPLORER
-	department_flag = JOBCAT_SUPPORT
-	total_positions = 0
-	spawn_positions = 0
-	supervisors = "the head of personnel"
-	department_head = list("Head of Personnel")
-	selection_color = "#dddddd"
-	access = list(ACCESS_MAINT_TUNNELS, ACCESS_GATEWAY, ACCESS_EVA, ACCESS_EXTERNAL_AIRLOCKS)
-	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_GATEWAY, ACCESS_EVA, ACCESS_EXTERNAL_AIRLOCKS)
-	outfit = /datum/outfit/job/explorer
-	hidden_from_job_prefs = TRUE
-
-/datum/outfit/job/explorer
-	// This outfit is never used, because there are no slots for this job.
-	// To get it, you have to go to the HOP and ask for a transfer to it.
-	name = "Explorer"
-	jobtype = /datum/job/explorer
-	uniform = /obj/item/clothing/under/color/random
-	shoes = /obj/item/clothing/shoes/black

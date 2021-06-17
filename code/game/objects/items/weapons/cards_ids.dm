@@ -610,8 +610,8 @@
 	desc = "The spare ID of the captain."
 	icon_state = "gold"
 	item_state = "gold_id"
-	registered_name = "Captain"
-	assignment = "Captain"
+	registered_name = "Mayor"
+	assignment = "Mayor"
 
 /obj/item/card/id/captains_spare/New()
 	var/datum/job/captain/J = new/datum/job/captain
@@ -695,7 +695,7 @@
 
 /obj/item/card/id/salvage_captain
 	name = "Captain's ID"
-	registered_name = "Captain"
+	registered_name = "Mayor"
 	icon_state = "centcom"
 	desc = "Finders, keepers."
 	access = list(ACCESS_SALVAGE_CAPTAIN)
@@ -903,9 +903,9 @@
 		if("cargo")
 			return "Supply"
 		if("HoS")
-			return "Head of Security"
+			return "Sheriff"
 		if("CMO")
-			return "Chief Medical Officer"
+			return "Medical Administrator"
 		if("RD")
 			return "Research Director"
 		if("CE")

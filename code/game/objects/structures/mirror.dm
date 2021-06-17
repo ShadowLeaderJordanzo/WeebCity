@@ -113,13 +113,7 @@
 				curse(user)
 
 		if("Body")
-			var/list/race_list = list("Human", "Tajaran", "Skrell", "Unathi", "Diona", "Vulpkanin")
-			if(config.usealienwhitelist)
-				for(var/Spec in GLOB.whitelisted_species)
-					if(is_alien_whitelisted(H, Spec))
-						race_list += Spec
-			else
-				race_list += GLOB.whitelisted_species
+			var/list/race_list = list("Human")
 
 			var/datum/ui_module/appearance_changer/AC = ui_users[user]
 			if(!AC)

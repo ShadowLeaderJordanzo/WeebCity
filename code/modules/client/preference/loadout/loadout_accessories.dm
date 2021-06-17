@@ -66,12 +66,12 @@
 /datum/gear/accessory/holobadge
 	display_name = "holobadge, pin"
 	path = /obj/item/clothing/accessory/holobadge
-	allowed_roles = list("Head of Security", "Warden", "Detective", "Security Officer", "Security Pod Pilot")
+	allowed_roles = list("Sheriff", "Warden", "Detective", "Police Officer", "Security Pod Pilot")
 
 /datum/gear/accessory/holobadge_n
 	display_name = "holobadge, cord"
 	path = /obj/item/clothing/accessory/holobadge/cord
-	allowed_roles = list("Head of Security", "Warden", "Detective", "Security Officer", "Security Pod Pilot")
+	allowed_roles = list("Sheriff", "Warden", "Detective", "Police Officer", "Security Pod Pilot")
 
 /datum/gear/accessory/tieblue
 	display_name = "tie, blue"
@@ -92,7 +92,7 @@
 /datum/gear/accessory/stethoscope
 	display_name = "stethoscope"
 	path = /obj/item/clothing/accessory/stethoscope
-	allowed_roles = list("Chief Medical Officer", "Medical Doctor", "Paramedic", "Brig Physician")
+	allowed_roles = list("Medical Administrator", "Medical Doctor", "Paramedic", "Brig Physician")
 
 /datum/gear/accessory/cowboyshirt
 	display_name = "cowboy shirt, black"
@@ -170,17 +170,17 @@
 /datum/gear/accessory/armband_job/sec
 	display_name = " armband, security"
 	path = /obj/item/clothing/accessory/armband/sec
-	allowed_roles = list("Head of Security", "Warden", "Detective", "Security Officer", "Brig Physician", "Security Pod Pilot")
+	allowed_roles = list("Sheriff", "Warden", "Detective", "Police Officer", "Brig Physician", "Security Pod Pilot")
 
 /datum/gear/accessory/armband_job/cargo
 	display_name = "cargo armband"
 	path = /obj/item/clothing/accessory/armband/cargo
-	allowed_roles = list("Quartermaster","Cargo Technician", "Shaft Miner")
+	allowed_roles = list("Manager","Crew Member")
 
 /datum/gear/accessory/armband_job/medical
 	display_name = "armband, medical"
 	path = /obj/item/clothing/accessory/armband/med
-	allowed_roles = list("Chief Medical Officer", "Medical Doctor", "Coroner", "Paramedic", "Brig Physician")
+	allowed_roles = list("Medical Administrator", "Medical Doctor", "Coroner", "Paramedic", "Brig Physician")
 
 /datum/gear/accessory/armband_job/emt
 	display_name = "armband, EMT"
@@ -190,12 +190,12 @@
 /datum/gear/accessory/armband_job/engineering
 	display_name = "armband, engineering"
 	path = /obj/item/clothing/accessory/armband/engine
-	allowed_roles = list("Chief Engineer","Station Engineer", "Life Support Specialist")
+	allowed_roles = list("Chief Engineer","Engineer", "Life Support Specialist")
 
 /datum/gear/accessory/armband_job/hydro
 	display_name = "armband, hydroponics"
 	path = /obj/item/clothing/accessory/armband/hydro
-	allowed_roles = list("Botanist")
+	allowed_roles = list("Farmer")
 
 /datum/gear/accessory/armband_job/sci
 	display_name = "armband, science"

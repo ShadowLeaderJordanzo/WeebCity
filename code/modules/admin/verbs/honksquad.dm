@@ -76,7 +76,7 @@ GLOBAL_VAR_INIT(sent_honksquad, 0)
 
 /client/proc/create_honksquad(obj/spawn_location, honk_leader_selected = 0)
 	var/mob/living/carbon/human/new_honksquad = new(spawn_location.loc)
-	var/honksquad_leader_rank = pick("Lieutenant", "Captain", "Major")
+	var/honksquad_leader_rank = pick("Lieutenant", "Mayor", "Major")
 	var/honksquad_rank = pick("Corporal", "Sergeant", "Staff Sergeant", "Sergeant 1st Class", "Master Sergeant", "Sergeant Major")
 	var/honksquad_name = pick(GLOB.clown_names)
 

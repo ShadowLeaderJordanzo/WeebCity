@@ -13,7 +13,7 @@
 /datum/game_mode/revolution
 	name = "revolution"
 	config_tag = "revolution"
-	restricted_jobs = list("Security Officer", "Warden", "Detective", "Internal Affairs Agent", "AI", "Cyborg","Captain", "Head of Personnel", "Head of Security", "Chief Engineer", "Research Director", "Chief Medical Officer", "Blueshield", "Nanotrasen Representative", "Security Pod Pilot", "Magistrate", "Brig Physician")
+	restricted_jobs = list("Police Officer", "Warden", "Detective", "Lawyer", "AI", "Cyborg","Mayor", "Secretary", "Sheriff", "Chief Engineer", "Research Director", "Medical Administrator", "Blueshield", "Nanotrasen Representative", "Security Pod Pilot", "Magistrate", "Brig Physician")
 	required_players = 20
 	required_enemies = 1
 	recommended_enemies = 3
@@ -124,8 +124,7 @@
 			to_chat(mob, "Your training has allowed you to overcome your clownish nature, allowing you to wield weapons without harming yourself.")
 			mob.dna.SetSEState(GLOB.clumsyblock, FALSE)
 			singlemutcheck(mob, GLOB.clumsyblock, MUTCHK_FORCED)
-			var/datum/action/innate/toggle_clumsy/A = new
-			A.Grant(mob)
+
 
 	var/obj/item/flash/T = new(mob)
 	var/obj/item/toy/crayon/spraycan/R = new(mob)
@@ -391,7 +390,7 @@
 		var/mob/living/carbon/human/player = thing
 		if(player.mind)
 			var/role = player.mind.assigned_role
-			if(role in list("Captain", "Head of Security", "Head of Personnel", "Chief Engineer", "Research Director"))
+			if(role in list("Mayor", "Sheriff", "Secretary", "Chief Engineer", "Research Director"))
 				if(player.stat == DEAD)
 					GLOB.score_deadcommand++
 
@@ -422,7 +421,7 @@
 		var/mob/living/carbon/human/player = thing
 		if(player.mind)
 			var/role = player.mind.assigned_role
-			if(role in list("Captain", "Head of Security", "Head of Personnel", "Chief Engineer", "Research Director"))
+			if(role in list("Mayor", "Sheriff", "Secretary", "Chief Engineer", "Research Director"))
 				if(player.stat != DEAD)
 					comcount++
 			else

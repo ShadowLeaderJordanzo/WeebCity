@@ -171,7 +171,7 @@ GLOBAL_LIST_INIT(vox_sounds, list(
 "bossed" = 'sound/vox_fem/bossed.ogg',
 "bossing" = 'sound/vox_fem/bossing.ogg',
 "bossy" = 'sound/vox_fem/bossy.ogg',
-"botanist" = 'sound/vox_fem/botanist.ogg',
+"Farmer" = 'sound/vox_fem/botanist.ogg',
 "botanists" = 'sound/vox_fem/botanists.ogg',
 "bottom" = 'sound/vox_fem/bottom.ogg',
 "brain" = 'sound/vox_fem/brain.ogg',

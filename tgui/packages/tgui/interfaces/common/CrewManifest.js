@@ -7,12 +7,12 @@ import { COLORS } from "../../constants";
 const deptCols = COLORS.department;
 
 const HeadRoles = [
-  "Captain",
-  "Head of Security",
+  "Mayor",
+  "Sheriff",
   "Chief Engineer",
-  "Chief Medical Officer",
+  "Medical Administrator",
   "Research Director",
-  "Head of Personnel",
+  "Secretary",
 ];
 
 // Head colour check. Abbreviated to save on 80 char
@@ -23,7 +23,7 @@ const HCC = role => {
   }
 
   // Return yellow if its the qm
-  if (role === "Quartermaster") {
+  if (role === "Manager") {
     return "yellow";
   }
 
@@ -34,7 +34,7 @@ const HCC = role => {
 // Head bold check. Abbreviated to save on 80 char
 const HBC = role => {
   // Return true if they are a head, or a QM
-  if ((HeadRoles.indexOf(role) !== -1) || role === "Quartermaster") {
+  if ((HeadRoles.indexOf(role) !== -1) || role === "Manager") {
     return true;
   } else {
     return false;

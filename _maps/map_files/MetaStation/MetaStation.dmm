@@ -4055,7 +4055,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Head of Security"
+	name = "Sheriff"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6108,7 +6108,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 4;
@@ -6733,7 +6733,7 @@
 "apE" = (
 /obj/structure/chair/comfy/black,
 /obj/effect/landmark/start{
-	name = "Head of Security"
+	name = "Sheriff"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/main)
@@ -7321,7 +7321,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "red"
@@ -7339,7 +7339,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plasteel{
@@ -18738,7 +18738,7 @@
 /area/crew_quarters/courtroom)
 "aOT" = (
 /obj/effect/landmark/start{
-	name = "Internal Affairs Agent"
+	name = "Lawyer"
 	},
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -19378,7 +19378,7 @@
 /area/crew_quarters/courtroom)
 "aQs" = (
 /obj/effect/landmark/start{
-	name = "Internal Affairs Agent"
+	name = "Lawyer"
 	},
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/courtroom)
@@ -19954,7 +19954,7 @@
 /area/crew_quarters/courtroom)
 "aRL" = (
 /obj/effect/landmark/start{
-	name = "Internal Affairs Agent"
+	name = "Lawyer"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -20256,7 +20256,7 @@
 /area/crew_quarters/courtroom)
 "aSz" = (
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plasteel,
@@ -20903,7 +20903,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/mining/glass{
-	name = "Quartermaster";
+	name = "Manager";
 	req_access_txt = "41"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -20950,7 +20950,7 @@
 /area/quartermaster/qm)
 "aTZ" = (
 /obj/effect/landmark/start{
-	name = "Quartermaster"
+	name = "Manager"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -22579,7 +22579,7 @@
 	})
 "aXw" = (
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/effect/decal/warning_stripes/yellow,
 /turf/simulated/floor/plasteel,
@@ -23097,7 +23097,7 @@
 /area/engine/engineering)
 "aYE" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /obj/machinery/light{
 	dir = 8
@@ -24194,7 +24194,7 @@
 	})
 "baV" = (
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -27234,7 +27234,7 @@
 /area/quartermaster/office)
 "bhh" = (
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -29070,7 +29070,7 @@
 /area/maintenance/incinerator)
 "bla" = (
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /obj/structure/chair/comfy/brown{
 	dir = 8;
@@ -29102,7 +29102,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/captain,
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /obj/machinery/camera{
 	c_tag = "Captain's Quarters";
@@ -29760,7 +29760,7 @@
 "bms" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -29897,7 +29897,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/landmark/start{
-	name = "Janitor"
+	name = "Waste Collector"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -31535,7 +31535,7 @@
 "bpL" = (
 /obj/structure/chair/office/dark,
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "arrival"
@@ -31860,7 +31860,7 @@
 	},
 /obj/machinery/light,
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /obj/machinery/light_switch{
 	pixel_y = -25
@@ -31896,7 +31896,7 @@
 	})
 "bqs" = (
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /obj/machinery/alarm{
 	dir = 1;
@@ -32083,7 +32083,7 @@
 	pixel_y = 8
 	},
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /turf/simulated/floor/plasteel,
 /area/engine/break_room)
@@ -32970,7 +32970,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /turf/simulated/floor/plasteel,
 /area/engine/break_room)
@@ -33555,7 +33555,7 @@
 /area/crew_quarters/heads)
 "btN" = (
 /obj/effect/landmark/start{
-	name = "Head of Personnel"
+	name = "Secretary"
 	},
 /obj/structure/chair/office/dark{
 	dir = 8
@@ -35258,7 +35258,7 @@
 	})
 "bwu" = (
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /obj/structure/chair/comfy/brown,
 /obj/structure/disposalpipe/segment,
@@ -37179,7 +37179,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "Secretary";
 	req_access = null;
 	req_access_txt = "57"
 	},
@@ -37288,7 +37288,7 @@
 "bAa" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "Secretary";
 	req_access = null;
 	req_access_txt = "57"
 	},
@@ -38118,7 +38118,7 @@
 "bCb" = (
 /obj/structure/chair/office/dark,
 /obj/effect/landmark/start{
-	name = "Head of Personnel"
+	name = "Secretary"
 	},
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -51203,7 +51203,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Botanist"
+	name = "Farmer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 10;
@@ -51816,7 +51816,7 @@
 /area/hydroponics)
 "cet" = (
 /obj/effect/landmark/start{
-	name = "Botanist"
+	name = "Farmer"
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/plasteel{
@@ -51846,7 +51846,7 @@
 	pixel_x = 24
 	},
 /obj/effect/landmark/start{
-	name = "Botanist"
+	name = "Farmer"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plasteel{
@@ -52459,7 +52459,7 @@
 /area/hydroponics)
 "cfD" = (
 /obj/effect/landmark/start{
-	name = "Botanist"
+	name = "Farmer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -54406,7 +54406,7 @@
 	})
 "cjv" = (
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plasteel{
@@ -63521,7 +63521,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Chief Medical Officer"
+	name = "Medical Administrator"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -64254,7 +64254,7 @@
 /area/medical/medbay3)
 "cCF" = (
 /obj/effect/landmark/start{
-	name = "Chief Medical Officer"
+	name = "Medical Administrator"
 	},
 /obj/structure/chair/office/light{
 	dir = 4
@@ -78155,7 +78155,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -80128,7 +80128,7 @@
 	pixel_y = 8
 	},
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -81249,7 +81249,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -82160,7 +82160,7 @@
 	pixel_y = 8
 	},
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -84005,7 +84005,7 @@
 	})
 "saH" = (
 /obj/effect/landmark/start{
-	name = "Botanist"
+	name = "Farmer"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -85234,7 +85234,7 @@
 /area/crew_quarters/locker)
 "wtP" = (
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,

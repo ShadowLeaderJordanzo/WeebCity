@@ -48,7 +48,7 @@ GLOBAL_LIST_EMPTY(all_cults)
 /datum/game_mode/cult
 	name = "cult"
 	config_tag = "cult"
-	restricted_jobs = list("Chaplain", "AI", "Cyborg", "Internal Affairs Agent", "Security Officer", "Warden", "Detective", "Security Pod Pilot", "Head of Security", "Captain", "Head of Personnel", "Blueshield", "Nanotrasen Representative", "Magistrate", "Brig Physician", "Nanotrasen Navy Officer", "Special Operations Officer", "Syndicate Officer")
+	restricted_jobs = list("Chaplain", "AI", "Cyborg", "Lawyer", "Police Officer", "Warden", "Detective", "Security Pod Pilot", "Sheriff", "Mayor", "Secretary", "Blueshield", "Nanotrasen Representative", "Magistrate", "Brig Physician", "Nanotrasen Navy Officer", "Special Operations Officer", "Syndicate Officer")
 	protected_jobs = list()
 	required_players = 30
 	required_enemies = 3
@@ -88,13 +88,6 @@ GLOBAL_LIST_EMPTY(all_cults)
 		var/datum/objective/servecult/obj = new
 		obj.owner = cult_mind
 		cult_mind.objectives += obj
-
-		if(cult_mind.assigned_role == "Clown")
-			to_chat(cult_mind.current, "<span class='cultitalic'>A dark power has allowed you to overcome your clownish nature, letting you wield weapons without harming yourself.</span>")
-			cult_mind.current.dna.SetSEState(GLOB.clumsyblock, FALSE)
-			singlemutcheck(cult_mind.current, GLOB.clumsyblock, MUTCHK_FORCED)
-			var/datum/action/innate/toggle_clumsy/A = new
-			A.Grant(cult_mind.current)
 
 		add_cult_actions(cult_mind)
 		update_cult_icons_added(cult_mind)
@@ -141,12 +134,7 @@ GLOBAL_LIST_EMPTY(all_cults)
 		cult_mind.current.faction |= "cult"
 		cult_mind.special_role = SPECIAL_ROLE_CULTIST
 
-		if(cult_mind.assigned_role == "Clown")
-			to_chat(cult_mind.current, "<span class='cultitalic'>A dark power has allowed you to overcome your clownish nature, letting you wield weapons without harming yourself.</span>")
-			cult_mind.current.dna.SetSEState(GLOB.clumsyblock, FALSE)
-			singlemutcheck(cult_mind.current, GLOB.clumsyblock, MUTCHK_FORCED)
-			var/datum/action/innate/toggle_clumsy/A = new
-			A.Grant(cult_mind.current)
+
 		SEND_SOUND(cult_mind.current, sound('sound/ambience/antag/bloodcult.ogg'))
 		cult_mind.current.create_attack_log("<span class='danger'>Has been converted to the cult!</span>")
 		cult_mind.current.create_log(CONVERSION_LOG, "converted to the cult")

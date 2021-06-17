@@ -160,13 +160,13 @@
 	//Human specific stuff.
 	var/mob_species = null		//Set species
 	var/allow_species_pick = FALSE
-	var/list/pickable_species = list("Human", "Vulpkanin", "Tajaran", "Unathi", "Skrell", "Diona")
+	var/list/pickable_species = list("Human")
 	var/datum/outfit/outfit = /datum/outfit	//If this is a path, it will be instanced in Initialize()
 	var/disable_pda = TRUE
 	var/disable_sensors = TRUE
 	//All of these only affect the ID that the outfit has placed in the ID slot
 	var/id_job = null			//Such as "Clown" or "Chef." This just determines what the ID reads as, not their access
-	var/id_access = null		//This is for access. See access.dm for which jobs give what access. Use "Captain" if you want it to be all access.
+	var/id_access = null		//This is for access. See access.dm for which jobs give what access. Use "Mayor" if you want it to be all access.
 	var/id_access_list = null	//Allows you to manually add access to an ID card.
 	assignedrole = "Ghost Role"
 
@@ -386,7 +386,7 @@
 	outfit = /datum/outfit/job/engineer/suit
 
 /datum/outfit/job/engineer/suit
-	name = "Station Engineer"
+	name = "Engineer"
 
 	uniform = /obj/item/clothing/under/rank/engineer
 	belt = /obj/item/storage/belt/utility/full
@@ -481,8 +481,6 @@
 	l_pocket = /obj/item/reagent_containers/food/pill/patch/styptic
 	r_pocket = /obj/item/flashlight/seclite
 
-/obj/effect/mob_spawn/human/miner/explorer
-	outfit = /datum/outfit/job/mining/equipped
 
 /obj/effect/mob_spawn/human/bartender
 	name = "Space Bartender"
@@ -566,7 +564,7 @@
 	name = "Bridge Officer"
 	mob_name = "Bridge Officer"
 	id_job = "Bridge Officer"
-	id_access = "Captain"
+	id_access = "Mayor"
 	outfit = /datum/outfit/nanotrasenbridgeofficercorpse
 
 /datum/outfit/nanotrasenbridgeofficercorpse
@@ -583,7 +581,7 @@
 	name = "Commander"
 	mob_name = "Commander"
 	id_job = "Commander"
-	id_access = "Captain"
+	id_access = "Mayor"
 	outfit = /datum/outfit/nanotrasencommandercorpse
 
 /datum/outfit/nanotrasencommandercorpse

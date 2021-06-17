@@ -1658,7 +1658,7 @@
 /area/security/main)
 "afJ" = (
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/main)
@@ -3916,7 +3916,7 @@
 	pixel_y = 24
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/main)
@@ -4454,7 +4454,7 @@
 	dir = 8
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/main)
@@ -4852,7 +4852,7 @@
 	network = list("SS13")
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/main)
@@ -4870,7 +4870,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Head of Security"
+	name = "Sheriff"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 2;
@@ -5195,7 +5195,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command/glass{
 	id_tag = "hosofficedoor";
-	name = "Head of Security";
+	name = "Sheriff";
 	req_access_txt = "58"
 	},
 /turf/simulated/floor/plasteel{
@@ -5257,7 +5257,7 @@
 	pixel_y = 2
 	},
 /obj/effect/landmark/start{
-	name = "Head of Security"
+	name = "Sheriff"
 	},
 /turf/simulated/floor/carpet,
 /area/security/hos)
@@ -5765,7 +5765,7 @@
 	tag = ""
 	},
 /obj/effect/landmark/start{
-	name = "Security Officer"
+	name = "Police Officer"
 	},
 /turf/simulated/floor/plasteel,
 /area/security/main)
@@ -5830,7 +5830,7 @@
 "aob" = (
 /obj/structure/chair/office/dark,
 /obj/effect/landmark/start{
-	name = "Internal Affairs Agent"
+	name = "Lawyer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 2;
@@ -7223,7 +7223,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Security";
+	name = "Sheriff";
 	req_access_txt = "58"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13112,7 +13112,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start{
-	name = "Internal Affairs Agent"
+	name = "Lawyer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 2;
@@ -32553,7 +32553,7 @@
 /area/hydroponics)
 "box" = (
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /turf/simulated/floor/plasteel,
 /area/quartermaster/office)
@@ -36894,7 +36894,7 @@
 "bxL" = (
 /obj/structure/chair/stool,
 /obj/effect/landmark/start{
-	name = "Botanist"
+	name = "Farmer"
 	},
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -43151,7 +43151,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Captain"
+	name = "Mayor"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -46125,7 +46125,7 @@
 /area/quartermaster/storage)
 "bPV" = (
 /obj/effect/landmark/start{
-	name = "Cargo Technician"
+	name = "Crew Member"
 	},
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -46350,7 +46350,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
-	name = "Head of Personnel";
+	name = "Secretary";
 	req_access = null;
 	req_access_txt = "57"
 	},
@@ -50133,7 +50133,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start{
-	name = "Head of Personnel"
+	name = "Secretary"
 	},
 /turf/simulated/floor/plasteel,
 /area/crew_quarters/heads)
@@ -51203,7 +51203,7 @@
 /obj/machinery/navbeacon{
 	codes_txt = "delivery";
 	dir = 8;
-	location = "Janitor"
+	location = "Waste Collector"
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -52654,7 +52654,7 @@
 "caT" = (
 /obj/structure/chair/office/light,
 /obj/effect/landmark/start{
-	name = "Chief Medical Officer"
+	name = "Medical Administrator"
 	},
 /turf/simulated/floor/plasteel{
 	icon_state = "darkbluecorners"
@@ -53099,7 +53099,7 @@
 "cbL" = (
 /obj/structure/chair/office/dark,
 /obj/effect/landmark/start{
-	name = "Quartermaster"
+	name = "Manager"
 	},
 /turf/simulated/floor/plasteel,
 /area/quartermaster/qm)
@@ -53997,7 +53997,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
 	id_tag = "hopofficedoor";
-	name = "Head of Personnel";
+	name = "Secretary";
 	req_access = null;
 	req_access_txt = "57"
 	},
@@ -55087,7 +55087,7 @@
 	tag = ""
 	},
 /obj/effect/landmark/start{
-	name = "Janitor"
+	name = "Waste Collector"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -55912,7 +55912,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/mining/glass{
-	name = "Quartermaster";
+	name = "Manager";
 	req_access_txt = "41"
 	},
 /turf/simulated/floor/plasteel,
@@ -57308,7 +57308,7 @@
 /obj/structure/disposalpipe/sortjunction{
 	dir = 8;
 	icon_state = "pipe-j2s";
-	name = "Janitor";
+	name = "Waste Collector";
 	sortType = 22
 	},
 /turf/simulated/floor/plasteel,
@@ -74655,7 +74655,7 @@
 /area/maintenance/aft)
 "cNO" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -75142,7 +75142,7 @@
 /area/maintenance/asmaint)
 "cON" = (
 /obj/effect/landmark/start{
-	name = "Station Engineer"
+	name = "Engineer"
 	},
 /obj/structure/chair/comfy/black{
 	dir = 8

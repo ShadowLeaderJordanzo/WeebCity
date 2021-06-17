@@ -31,8 +31,8 @@
 		"Trader" = "radio",
 		// Command (Solo command, not department heads)
 		"Blueshield" = "comradio",
-		"Captain" = "comradio",
-		"Head of Personnel" = "comradio",
+		"Mayor" = "comradio",
+		"Secretary" = "comradio",
 		"Nanotrasen Representative" = "comradio",
 		// Engineeering
 		"Atmospheric Technician" = "engradio",
@@ -42,7 +42,7 @@
 		"Life Support Specialist" = "engradio",
 		"Maintenance Technician" = "engradio",
 		"Mechanic" = "engradio",
-		"Station Engineer" = "engradio",
+		"Engineer" = "engradio",
 		// Central Command
 		"Emergency Response Team Engineer" = "dsquadradio", // I know this says deathsquad but the class for responseteam is neon green. No.
 		"Emergency Response Team Leader" = "dsquadradio",
@@ -53,7 +53,7 @@
 		"Special Operations Officer" = "dsquadradio",
 		// Medical
 		"Chemist" = "medradio",
-		"Chief Medical Officer" = "medradio",
+		"Medical Administrator" = "medradio",
 		"Coroner" = "medradio",
 		"Medical Doctor" = "medradio",
 		"Microbiologist" = "medradio",
@@ -82,24 +82,22 @@
 		"Brig Physician" = "secradio",
 		"Detective" = "secradio",
 		"Forensic Technician" = "secradio",
-		"Head of Security" = "secradio",
+		"Sheriff" = "secradio",
 		"Human Resources Agent" = "secradio",
-		"Internal Affairs Agent" = "secradio",
+		"Lawyer" = "secradio",
 		"Magistrate" = "secradio",
-		"Security Officer" = "secradio",
+		"Police Officer" = "secradio",
 		"Security Pod Pilot" = "secradio",
 		"Warden" = "secradio",
 		// Supply
-		"Quartermaster" = "supradio",
-		"Cargo Technician" = "supradio",
-		"Shaft Miner" = "supradio",
-		"Spelunker" = "supradio",
+		"Manager" = "supradio",
+		"Crew Member" = "supradio",
 		// Service
 		"Barber" = "srvradio",
 		"Bartender" = "srvradio",
 		"Beautician" = "srvradio",
 		"Botanical Researcher" = "srvradio",
-		"Botanist" = "srvradio",
+		"Farmer" = "srvradio",
 		"Butcher" = "srvradio",
 		"Chaplain" = "srvradio",
 		"Chef" = "srvradio",
@@ -109,13 +107,13 @@
 		"Custodial Technician" = "srvradio",
 		"Hair Stylist" = "srvradio",
 		"Hydroponicist" = "srvradio",
-		"Janitor" = "srvradio",
+		"Waste Collector" = "srvradio",
 		"Journalist" = "srvradio",
 		"Librarian" = "srvradio",
 		"Mime" = "srvradio",
 	)
 	/// List of Command jobs
-	var/list/heads = list("Captain", "Head of Personnel", "Nanotrasen Representative", "Blueshield", "Chief Engineer", "Chief Medical Officer", "Research Director", "Head of Security", "Magistrate", "AI")
+	var/list/heads = list("Mayor", "Secretary", "Nanotrasen Representative", "Blueshield", "Chief Engineer", "Medical Administrator", "Research Director", "Sheriff", "Magistrate", "AI")
 	/// List of ERT jobs
 	var/list/ert_jobs = list("Emergency Response Team Officer", "Emergency Response Team Engineer", "Emergency Response Team Medic", "Emergency Response Team Leader", "Emergency Response Team Member")
 	/// List of CentComm jobs

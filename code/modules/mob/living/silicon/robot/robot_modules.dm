@@ -411,7 +411,7 @@
 // Janitor cyborg module.
 /obj/item/robot_module/janitor
 	name = "janitorial robot module"
-	module_type = "Janitor"
+	module_type = "Waste Collector"
 	basic_modules = list(
 		/obj/item/flash/cyborg,
 		/obj/item/soap/nanotrasen,

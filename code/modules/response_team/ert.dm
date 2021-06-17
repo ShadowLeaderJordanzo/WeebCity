@@ -71,7 +71,7 @@ GLOBAL_VAR_INIT(ert_request_answered, FALSE)
 
 	// Respawnable players get first dibs
 	for(var/mob/dead/observer/M in ert_candidates)
-		if(jobban_isbanned(M, ROLE_TRAITOR) || jobban_isbanned(M, "Security Officer") || jobban_isbanned(M, "Captain") || jobban_isbanned(M, "Cyborg"))
+		if(jobban_isbanned(M, ROLE_TRAITOR) || jobban_isbanned(M, "Police Officer") || jobban_isbanned(M, "Mayor") || jobban_isbanned(M, "Cyborg"))
 			continue
 		if((M in GLOB.respawnable_list) && M.JoinResponseTeam())
 			GLOB.response_team_members |= M
@@ -215,7 +215,7 @@ GLOBAL_VAR_INIT(ert_request_answered, FALSE)
 	slots["Security"] = sec
 	slots["Medic"] = med
 	slots["Engineer"] = eng
-	slots["Janitor"] = jan
+	slots["Waste Collector"] = jan
 	slots["Paranormal"] = par
 	slots["Cyborg"] = cyb
 
@@ -245,7 +245,7 @@ GLOBAL_VAR_INIT(ert_request_answered, FALSE)
 		if("Medic")
 			M.equipOutfit(medical_outfit)
 
-		if("Janitor")
+		if("Waste Collector")
 			M.equipOutfit(janitor_outfit)
 
 		if("Paranormal")

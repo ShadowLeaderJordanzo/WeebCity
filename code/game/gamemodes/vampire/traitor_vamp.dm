@@ -2,7 +2,7 @@
 	name = "traitor+vampire"
 	config_tag = "traitorvamp"
 	traitors_possible = 3 //hard limit on traitors if scaling is turned off
-	protected_jobs = list("Security Officer", "Warden", "Detective", "Head of Security", "Captain", "Blueshield", "Nanotrasen Representative", "Security Pod Pilot", "Magistrate", "Chaplain", "Brig Physician", "Internal Affairs Agent", "Nanotrasen Navy Officer", "Special Operations Officer")
+	protected_jobs = list("Police Officer", "Warden", "Detective", "Sheriff", "Mayor", "Blueshield", "Nanotrasen Representative", "Security Pod Pilot", "Magistrate", "Chaplain", "Brig Physician", "Lawyer", "Nanotrasen Navy Officer", "Special Operations Officer")
 	restricted_jobs = list("Cyborg")
 	secondary_restricted_jobs = list("AI")
 	required_players = 10

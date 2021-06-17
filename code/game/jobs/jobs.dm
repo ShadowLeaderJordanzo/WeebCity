@@ -3,80 +3,64 @@ GLOBAL_LIST_EMPTY(assistant_occupations)
 
 
 GLOBAL_LIST_INIT(command_positions, list(
-	"Captain",
-	"Head of Personnel",
-	"Head of Security",
+	"Mayor",
+	"Secretary",//"Secretary",
+	"Sheriff",//"Sheriff",
 	"Chief Engineer",
 	"Research Director",
-	"Chief Medical Officer",
-	"Nanotrasen Representative"
+	"Medical Administrator",
 ))
 
 
 GLOBAL_LIST_INIT(engineering_positions, list(
 	"Chief Engineer",
-	"Station Engineer",
-	"Life Support Specialist",
-	"Mechanic"
+	"Engineer",
 ))
 
 
 GLOBAL_LIST_INIT(medical_positions, list(
-	"Chief Medical Officer",
+	"Medical Administrator",
 	"Medical Doctor",
-	"Geneticist",
-	"Psychiatrist",
-	"Chemist",
-	"Virologist",
-	"Paramedic",
-	"Coroner"
 ))
 
 
 GLOBAL_LIST_INIT(science_positions, list(
 	"Research Director",
 	"Scientist",
-	"Geneticist",	//Part of both medical and science
-	"Roboticist",
 ))
 
 //BS12 EDIT
 GLOBAL_LIST_INIT(support_positions, list(
-	"Head of Personnel",
+	"Secretary",
 	"Bartender",
-	"Botanist",
+	"Farmer",
 	"Chef",
-	"Janitor",
-	"Librarian",
-	"Quartermaster",
-	"Cargo Technician",
-	"Shaft Miner",
-	"Internal Affairs Agent",
+	"Garbage Man",
+	"Manager",
+	"Crew Member",
+	"Lawyer",
 	"Chaplain",
-	"Clown",
+	"News Anchor",
 	"Mime",
 	"Barber",
 	"Magistrate",
-	"Nanotrasen Representative",
-	"Blueshield",
 	"Explorer"
 ))
 
 GLOBAL_LIST_INIT(supply_positions, list(
-	"Head of Personnel",
-	"Quartermaster",
-	"Cargo Technician",
-	"Shaft Miner"
+	"Secretary",
+	"Manager",
+	"Crew Member",
 ))
 
-GLOBAL_LIST_INIT(service_positions, (list("Head of Personnel") + (support_positions - supply_positions)))
+GLOBAL_LIST_INIT(service_positions, (list("Secretary") + (support_positions - supply_positions)))
 
 
 GLOBAL_LIST_INIT(security_positions, list(
-	"Head of Security",
+	"Sheriff",
 	"Warden",
 	"Detective",
-	"Security Officer",
+	"Police Officer",
 	"Brig Physician",
 	"Security Pod Pilot",
 	"Magistrate"
@@ -88,17 +72,12 @@ GLOBAL_LIST_INIT(civilian_positions, list(
 ))
 
 GLOBAL_LIST_INIT(nonhuman_positions, list(
-	"AI",
-	"Cyborg",
-	"Drone",
-	"pAI"
 ))
 
 GLOBAL_LIST_INIT(whitelisted_positions, list(
 	"Blueshield",
 	"Nanotrasen Representative",
 	"Barber",
-	"Mechanic",
 	"Brig Physician",
 	"Magistrate",
 	"Security Pod Pilot",
