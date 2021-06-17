@@ -23,13 +23,14 @@
 /obj/effect/landmark/starts/sec_officer
     name = "Police Officer"
 
-///obj/effect/landmark/starts/brig_phys
-//    name = "Brig Physician"
+/obj/effect/landmark/starts/brig_phys
+    name = "Brig Physician"
 
-///    name = "Warden"
+/obj/effect/landmark/starts/warden
+    name = "Warden"
 
-//obj/effect/landmark/starts/shaft_miner
-//    name = "Shaft Miner"
+/obj/effect/landmark/starts/shaft_miner
+    name = "Shaft Miner"
 
 /obj/effect/landmark/starts/detective
     name = "Detective"
@@ -40,8 +41,8 @@
 /obj/effect/landmark/starts/clown
     name = "News Anchor"
 
-//obj/effect/landmark/starts/magistrate
-//    name = "Magistrate"
+/obj/effect/landmark/starts/magistrate
+    name = "Magistrate"
 
 /obj/effect/landmark/starts/internal_affairs
     name = "Lawyer"
@@ -55,8 +56,8 @@
 /obj/effect/landmark/starts/station_engineer
     name = "Engineer"
 
-//obj/effect/landmark/starts/cyborg
- //   name = "Cyborg"
+/obj/effect/landmark/starts/cyborg
+    name = "Cyborg"
 
 /obj/effect/landmark/starts/chief_engineer
     name = "Chief Engineer"
@@ -64,8 +65,8 @@
 /obj/effect/landmark/starts/captain
     name = "Mayor"
 
-//obj/effect/landmark/starts/artificial_intelligence
-//    name = "AI"
+/obj/effect/landmark/starts/artificial_intelligence
+    name = "AI"
 
 /obj/effect/landmark/starts/janitor
     name = "Waste Collector"
@@ -82,11 +83,11 @@
 /obj/effect/landmark/starts/med_doc
     name = "Medical Doctor"
 
-///obj/effect/landmark/starts/coroner
-///    name = "Coroner"
+/obj/effect/landmark/starts/coroner
+    name = "Coroner"
 
-//obj/effect/landmark/starts/chemist
-///    name = "Chemist"
+/obj/effect/landmark/starts/chemist
+    name = "Chemist"
 
 //obj/effect/landmark/starts/geneticist
 //    name = "Geneticist"
@@ -94,11 +95,11 @@
 //obj/effect/landmark/starts/virologist
  //   name = "Virologist"
 
-//obj/effect/landmark/starts/psychiatrist
-//    name = "Psychiatrist"
+/obj/effect/landmark/starts/psychiatrist
+    name = "Psychiatrist"
 
-//obj/effect/landmark/starts/paramed
-//    name = "Paramedic"
+/obj/effect/landmark/starts/paramed
+    name = "Paramedic"
 
 /obj/effect/landmark/starts/research_director
     name = "Research Director"
@@ -106,14 +107,14 @@
 /obj/effect/landmark/starts/scientist
     name = "Scientist"
 
-//obj/effect/landmark/starts/roboticist
- //   name = "Roboticist"
+/obj/effect/landmark/starts/roboticist
+    name = "Roboticist"
 
-//obj/effect/landmark/starts/nanotrasen_rep
- //   name = "Nanotrasen Representative"
+/obj/effect/landmark/starts/nanotrasen_rep
+    name = "Nanotrasen Representative"
 
-//obj/effect/landmark/starts/blueshield
-//    name = "Blueshield"
+/obj/effect/landmark/starts/blueshield
+    name = "Blueshield"
 
 /obj/effect/landmark/starts/chaplain
     name = "Chaplain"
@@ -127,8 +128,8 @@
 /obj/effect/landmark/starts/botanist
     name = "Farmer"
 
-//obj/effect/landmark/starts/librarian
-//    name = "Librarian"
+/obj/effect/landmark/starts/librarian
+    name = "Librarian"
 
-//obj/effect/landmark/starts/explorer
-//    name = "Explorer"
+/obj/effect/landmark/starts/explorer
+    name = "Explorer"
