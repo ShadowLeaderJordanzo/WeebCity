@@ -18,14 +18,13 @@
 /obj/screen/fullscreen/lighting_backdrop/Sunlight
 	icon = 'icons/mob/screen_gen.dmi'
 	icon_state = "flash"
-	//screen_loc = "CENTER"
+	screen_loc = "CENTER"
 	transform = null
 	plane = LIGHTING_PLANE
 	layer = LIGHTING_LAYER
 	blend_mode = BLEND_ADD
 	show_when_dead = TRUE
-	screen_loc = "CENTER"
-	//render_source = "*SUNLIGHT_PLANE"
+	//render_source = SUNLIGHTING_RENDER_TARGET
 
 
 /obj/screen/fullscreen/lighting_backdrop/Sunlight/Initialize()

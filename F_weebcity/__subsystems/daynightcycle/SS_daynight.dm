@@ -11,24 +11,23 @@ SUNLIGHTING SUBSYSTEM + DATUMS
 /datum/time_of_day/day
 	name = "Day"
 	color = "#FFFFFF"
-	//duration = 9000
-	duration = 60
+	duration = 9000
 
 /datum/time_of_day/morning
 	name = "Morning"
 	color = "#808599"
-	//duration = 4500
-	duration = 60
+	duration = 4500
+
 /datum/time_of_day/evening
 	name = "Evening"
 	color = "#FFA891"
-	//duration = 4500
-	duration = 60
+	duration = 4500
+
 /datum/time_of_day/night
 	name = "Night"
 	color = "#050d29"
-	//duration = 9000
-	duration = 60
+	duration = 9000
+
 
 #define STEP_MORNING 0
 #define STEP_DAY 1
@@ -54,8 +53,8 @@ SUBSYSTEM_DEF(sunlight)
 	/* thanks ruskis */
 	var/datum/time_of_day/current_stage_datum
 	var/datum/time_of_day/next_stage_datum
-	var/current_step
-	var/next_step
+	var/current_stage
+	var/next_stage
 	var/stage_started
 	var/stage_finished
 	var/current_color
@@ -96,20 +95,20 @@ SUBSYSTEM_DEF(sunlight)
 
 /datum/controller/subsystem/sunlight/proc/check_cycle()
 	if(world.time > stage_finished)
-		set_time_of_day(current_step + 1)
+		set_time_of_day(current_stage + 1)
 
 /datum/controller/subsystem/sunlight/proc/set_time_of_day(var/stage)
 	if(stage > time_cycle_steps.len)
 		stage = STEP_DAY
 	stage_started = world.time
-	current_step = stage
-	current_stage_datum = time_cycle_steps[current_step]
+	current_stage = stage
+	current_stage_datum = time_cycle_steps[current_stage]
 	stage_finished = current_stage_datum.duration + world.time
 
-	next_step = current_step + 1
-	if(next_step > time_cycle_steps.len)
-		next_step = 1
-	next_stage_datum = time_cycle_steps[next_step]
+	next_stage = current_stage + 1
+	if(next_stage > time_cycle_steps.len)
+		next_stage = 1
+	next_stage_datum = time_cycle_steps[next_stage]
 
 /* set sunlight colour */
 
