@@ -1,8 +1,9 @@
+
 SUBSYSTEM_DEF(mob_hunt)
 	name = "Nano-Mob Hunter GO Server"
 	init_order = INIT_ORDER_NANOMOB
 	priority = FIRE_PRIORITY_NANOMOB // Low priority, no need for MC_TICK_CHECK due to extremely low performance impact.
-	flags = SS_NO_INIT
+	flags = SS_NO_INIT | SS_NO_FIRE //WEEBCITY - JTGSZ CHANGE - Reducing tick overtime due to no station areas avail for nanomobs to use on map.
 	offline_implications = "Nano-Mob Hunter will no longer spawn mobs. No immediate action is needed."
 	var/max_normal_spawns = 15		//change this to adjust the number of normal spawns that can exist at one time. trapped spawns (from traitors) don't count towards this
 	var/list/normal_spawns = list()
