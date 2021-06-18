@@ -87,7 +87,7 @@ GLOBAL_LIST_INIT(special_role_times, list( //minimum age (in days) for accounts 
 	var/sound = SOUND_DEFAULT
 	var/UI_style_color = "#ffffff"
 	var/UI_style_alpha = 255
-	var/clientfps = 0
+	var/clientfps = 200
 	var/atklog = ATKLOG_ALL
 	var/fuid							// forum userid
 
