@@ -220,6 +220,29 @@
 		style.remove(H)
 		to_chat(user, "<span class='sciradio'>You no longer have an urge to flex your muscles.</span>")
 
+/obj/item/wrathful_style
+	name = "Old Scroll"
+	desc = "A scroll detailing how Saiyans fight."
+	icon = 'icons/obj/wizard.dmi'
+	icon_state = "scroll2"
+	var/used = 0
+
+/obj/item/wrathful_style/attack_self(mob/user as mob)
+	if(!ishuman(user))
+		return
+
+	if(!used)
+		if(!(user.dna.species.name == "Saiyan"))
+			return
+		var/mob/living/carbon/human/H = user
+		var/datum/martial_art/wrathful/F = new/datum/martial_art/wrathful(null)
+		F.teach(H)
+		to_chat(H, "<span class='boldannounce'>You have learned how to fight like a Saiyan.</span>")
+		used = 1
+		desc = "It's completely blank."
+		name = "empty scroll"
+		icon_state = "blankscroll"
+
 /obj/item/plasma_fist_scroll
 	name = "frayed scroll"
 	desc = "An aged and frayed scrap of paper written in shifting runes. There are hand-drawn illustrations of pugilism."
