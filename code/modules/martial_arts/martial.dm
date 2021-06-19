@@ -220,7 +220,7 @@
 		style.remove(H)
 		to_chat(user, "<span class='sciradio'>You no longer have an urge to flex your muscles.</span>")
 
-/obj/item/wrathful_style
+/obj/item/wrathful_style // debug shit
 	name = "Old Scroll"
 	desc = "A scroll detailing how Saiyans fight."
 	icon = 'icons/obj/wizard.dmi'

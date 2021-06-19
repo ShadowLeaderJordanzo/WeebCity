@@ -63,7 +63,7 @@
     name = "Chief Engineer"
 
 /obj/effect/landmark/starts/captain
-    name = "Mayor"
+    name = "Captain"
 
 /obj/effect/landmark/starts/artificial_intelligence
     name = "AI"

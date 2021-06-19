@@ -1,4 +1,5 @@
-// Saiyans ahve powers, but it is just go, go fast and a regen when they get low.
+// Saiyans ahve powers, but it is just go, go fast and a regen when they get low. also the ki blast and beams, which may be a bit harder
+
 
 /obj/effect/proc_holder/spell/saiyan
 	panel = "Saiyan"
