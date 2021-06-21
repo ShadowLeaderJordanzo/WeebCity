@@ -13,3 +13,6 @@
 	item_state = "armor"
 	blood_overlay_type = "armor"
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 40, "energy" = 20, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 55, "acid" = 55)
+
+
+/obj/item/restraints/handcuffs/saiyancuffs
