@@ -25,14 +25,17 @@
 	H.loc = T.loc
 
 	if(give_objectives)
-		forge_human_objectives()
+		forge_objectives()
 	
 	H.mind.offstation_role = TRUE
 	H.set_species(/datum/species/human/saiyan) //We set them to saiyan
+	greet_saiyans()
 
 
 	. = ..()
-
+/*
+	Called on removal of the antag datum, which prob won't happen with these guys as they are a species combo
+*/
 /datum/antagonist/saiyan/on_removal()
 
 	return ..()
@@ -44,23 +47,15 @@
 /**
  * heres where objectives would go
  */
-/datum/antagonist/saiyan/proc/forge_human_objectives()
+/datum/antagonist/saiyan/proc/forge_objectives()
 	return
 
 /**
- * Create and assign a single randomized human traitor objective.
- *
- * Returns TRUE if an objective was added, and FALSE if it failed due to it being a duplicate.
+ *  Intro text
  */
-/datum/antagonist/saiyan/proc/forge_single_human_objective()
-	return FALSE
-
-/**
- * Give human traitors their uplink, and AI traitors their law 0. Play the traitor an alert sound.
- */
-/datum/antagonist/saiyan/proc/finalize_traitor()
+/datum/antagonist/saiyan/proc/greet_saiyans()
 	owner.current.playsound_local(get_turf(owner.current), 'sound/ambience/antag/tatoralert.ogg', 100, FALSE, pressure_affected = FALSE, use_reverb = FALSE)
-	to_chat(owner.current, "<span class='motd'>For more information, suck my dick</span>")
+	to_chat(owner.current, "<span class='motd'>For more information, ask someone!</span>")
 
  //doesn't appear to be tied to anything right now
 /datum/antagonist/saiyan/roundend_report_footer()

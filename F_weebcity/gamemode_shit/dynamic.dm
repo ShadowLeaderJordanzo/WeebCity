@@ -4,7 +4,7 @@
 /datum/game_mode/dynamic
 	name = "dynamic"
 	config_tag = "dynamic"
-	restricted_jobs = list("Cyborg")//They are part of the AI if he is traitor so are they, they use to get double chances
+	restricted_jobs = list("Cyborg","AI")// Cybernetic beings don't convert species v well do they.
 	protected_jobs = list()
 	required_players = 0
 	required_enemies = 1
@@ -44,6 +44,11 @@
 					candidates -= player
 
 	return candidates //we basically returning a list of minds to pick from wherev
+/*
+	This is a ticker loop, so we can handle recalculations/etc here on the integer used to better control this game_mode's handling of element introduction
+*/
+/datum/game_mode/dynamic/process()
+	return 0
 
 /datum/game_mode/dynamic/pre_setup()
 
@@ -88,4 +93,4 @@
 
 /datum/game_mode/dynamic/declare_completion()
 	..()
-	return//Traitors will be checked as part of check_extra_completion. Leaving this here as a reminder.
+	return
