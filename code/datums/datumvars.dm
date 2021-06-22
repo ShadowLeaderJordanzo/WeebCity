@@ -1086,7 +1086,7 @@
 		if(H.set_species(S.type))
 			to_chat(usr, "Set species of [H] to [H.dna.species].")
 			if(istype(H.dna.species, /datum/species/human/saiyan))
-				H.make_saiyan()
+				H.make_saiyan() // debug
 			H.regenerate_icons()
 			message_admins("[key_name_admin(usr)] has changed the species of [key_name_admin(H)] to [new_species]")
 			log_admin("[key_name(usr)] has changed the species of [key_name(H)] to [new_species]")

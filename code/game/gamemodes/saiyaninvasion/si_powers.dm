@@ -7,31 +7,6 @@
 	var/gender = MALE
 	var/list/powers = list(/obj/effect/proc_holder/spell/saiyan/self/zenkai, /obj/effect/proc_holder/spell/saiyan/self/breakout)
 
-/datum/saiyan/proc/force_add_ability(path)
-	var/spell = new path(owner)
-	if(istype(spell, /obj/effect/proc_holder/spell))
-		owner.mind.AddSpell(spell)
-	powers += spell
-	owner.update_sight() // Life updates conditionally, so we need to update sight here in case the vamp gets new vision based on his powers. Maybe one day refactor to be more OOP and on the vampire's ability datum.
-
-/datum/saiyan/proc/get_ability(path)
-	for(var/P in powers)
-		var/datum/power = P
-		if(power.type == path)
-			return power
-	return null
-
-/datum/saiyan/proc/add_ability(path)
-	if(!get_ability(path))
-		force_add_ability(path)
-
-/datum/saiyan/proc/remove_ability(ability)
-	if(ability && (ability in powers))
-		powers -= ability
-		owner.mind.spell_list.Remove(ability)
-		qdel(ability)
-		owner.update_sight() // Life updates conditionally, so we need to update sight here in case the vamp loses his vision based powers. Maybe one day refactor to be more OOP and on the vampire's ability datum.
-
 /mob/proc/make_saiyan()
 	if(!mind)
 		return
@@ -40,8 +15,8 @@
 		s = new /datum/saiyan()
 		s.owner = src
 		mind.saiyan = s
-		for(var/p in mind.saiyan.powers)
-			mind.saiyan.add_ability(p)
+		mind.AddSpell(s.powers[1])
+		mind.AddSpell(s.powers[2])
 	else
 		s = mind.saiyan
 		//remove saiyaan shit, this prolly aint needed but just in case
@@ -107,7 +82,7 @@
 /obj/effect/proc_holder/spell/saiyan/self/breakout/cast(list/targets, mob/user = usr)
 	var/mob/living/carbon/human/U = user
 	if(U.handcuffed)
-		if(!(istype(U.handcuffed, /obj/item/restraints/handcuffs/saiyancuffs)))
+		if(!(istype(U.handcuffed, /obj/item/restraints/handcuffs/energy/saiyancuffs)))
 			U.uncuff()
 			to_chat(U, "You snap the cuffs.")
 
