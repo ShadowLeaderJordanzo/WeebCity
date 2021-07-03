@@ -51,7 +51,7 @@
 	var/datum/changeling/changeling		//changeling holder
 	var/linglink
 	var/datum/vampire/vampire			//vampire holder
-
+	var/datum/saiyan/saiyan // saiyan holder
 	var/antag_hud_icon_state = null //this mind's ANTAG_HUD should have this icon_state
 	var/datum/atom_hud/antag/antag_hud = null //this mind's antag HUD
 	var/datum/mindslaves/som //stands for slave or master...hush..
@@ -969,7 +969,11 @@
 					domutcheck(current)
 					log_admin("[key_name(usr)] has reset [key_name(current)]'s DNA")
 					message_admins("[key_name_admin(usr)] has reset [key_name_admin(current)]'s DNA")
+	else if(href_list["saiyan"])
+		//switch(href_list["saiyan"])
+		//	if("clear")
 
+		//	if("saiyan")
 	else if(href_list["vampire"])
 		switch(href_list["vampire"])
 			if("clear")
