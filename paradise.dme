@@ -2505,6 +2505,8 @@
 #include "F_weebcity\__subsystems\daynightcycle\SS_daynight.dm"
 #include "F_weebcity\__subsystems\daynightcycle\sunlight_object.dm"
 #include "F_weebcity\_turfs\_baseturfs.dm"
+#include "F_weebcity\gamemode_shit\dynamic.dm"
+#include "F_weebcity\gamemode_shit\datums\saiyan_datum.dm"
 #include "F_weebcity\mapping\map_datums\maps.dm"
 #include "F_weebcity\mapping\map_helpers\areas.dm"
 #include "F_weebcity\mapping\map_helpers\landmarks.dm"
